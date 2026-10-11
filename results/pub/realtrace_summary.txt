@@ -1,0 +1,17 @@
+Measured traces (Kwak et al. 2026):
+  NMC 2170/Aged/C1: 1751 s, start 29.0 C, peak 595.2 C, reaches 200 C at 1616 s
+  NMC 2170/Aged/C2: 1726 s, start 28.2 C, peak 649.4 C, reaches 200 C at 1596 s
+  NMC 2170/Fresh/B1: 1601 s, start 39.6 C, peak 707.6 C, reaches 200 C at 1472 s
+  NMC 2170/Fresh/B2: 1554 s, start 39.1 C, peak 669.4 C, reaches 200 C at 1422 s
+  NMC pouch/Aged/D1: 2859 s, start 32.1 C, peak 601.4 C, reaches 200 C at 1934 s
+  NMC pouch/Fresh/A1: 2578 s, start 29.6 C, peak 657.1 C, reaches 200 C at 1961 s
+  NMC pouch/Fresh/A2: 2543 s, start 30.5 C, peak 712.6 C, reaches 200 C at 2024 s
+
+Per system over 7 traces x 3 noise seeds: Hazard FNR | stop margin before 200 C (s) | runs stopped before 200 C
+  B2_Debounce_3s         FNR 0.0000  margin  1035.8  stopped before runaway 21/21
+  B2_Rule                FNR 0.0000  margin  1068.9  stopped before runaway 21/21
+  B3_FixedFuzzy          FNR 0.0000  margin  1174.9  stopped before runaway 21/21
+  CUSUM_h16              FNR 0.0000  margin  1460.5  stopped before runaway 21/21
+  Proposed               FNR 0.0000  margin  1188.5  stopped before runaway 21/21
+  ProposedR              FNR 0.0000  margin  1176.1  stopped before runaway 21/21
+  Proposed_occluded      FNR 0.0000  margin  1186.3  stopped before runaway 21/21

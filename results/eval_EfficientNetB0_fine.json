@@ -1,0 +1,39 @@
+{
+  "backbone": "EfficientNet-B0",
+  "stage": "fine",
+  "accuracy": 0.9963768115942029,
+  "f1_macro": 0.9967625894081754,
+  "cfnc": 0.0265,
+  "per_class": {
+    "LiIon_18650": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fnr": 0.0,
+      "tp": 528,
+      "fn": 0,
+      "fp": 0,
+      "cfnc_contribution": 0.0
+    },
+    "LiIon_Pouch": {
+      "precision": 0.9904,
+      "recall": 0.9986,
+      "f1": 0.9945,
+      "fnr": 0.0014,
+      "tp": 719,
+      "fn": 1,
+      "fp": 7,
+      "cfnc_contribution": 0.0139
+    },
+    "LiPo": {
+      "precision": 0.999,
+      "recall": 0.9927,
+      "f1": 0.9958,
+      "fnr": 0.0073,
+      "tp": 953,
+      "fn": 7,
+      "fp": 1,
+      "cfnc_contribution": 0.0656
+    }
+  }
+}

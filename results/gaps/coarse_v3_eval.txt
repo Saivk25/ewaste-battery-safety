@@ -1,0 +1,8 @@
+== v2  threshold 0.1411
+   data_v3 test: accuracy 0.9118 (n=692), battery recall 0.9850 (n=266), damaged batteries 3/7, false alarms 18/426
+   Commons photos: batteries 20/26, swollen 2/5, devices 6/6, non-batteries correct 7/12
+   BatSort 174/179 (Ni-MH + Ni-Cd 15/15), XBAT+ devices diverted 301/420
+== v3  threshold 0.1113
+   data_v3 test: accuracy 0.9118 (n=692), battery recall 0.9925 (n=266), damaged batteries 5/7, false alarms 21/426
+   Commons photos: batteries 22/26, swollen 3/5, devices 6/6, non-batteries correct 4/12
+   BatSort 176/179 (Ni-MH + Ni-Cd 15/15), XBAT+ devices diverted 348/420

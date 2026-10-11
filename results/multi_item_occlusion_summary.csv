@@ -1,0 +1,62 @@
+scenario,system,metric,mean,std,n
+multi_item,B1_Vision_Only,Hazard_FNR,0.08895000000000002,0.04757169362638625,30.0
+multi_item,B1_Vision_Only,T_warn_s,180.33571428571426,63.779476637956506,28.0
+multi_item,B1_Vision_Only,T_stop_s,197.77142857142857,65.77646690027976,28.0
+multi_item,B1_Vision_Only,CFNC,0.17788333333333334,0.09512917926234009,30.0
+multi_item,B1_Vision_Only,FPR,0.0,0.0,30.0
+multi_item,B1_Vision_Only,item1_alert_rate,0.0,0.0,30.0
+multi_item,B1_Vision_Only,item1_estop_rate,0.0,0.0,30.0
+multi_item,B2_Rule_Based,Hazard_FNR,0.00099,0.0008829222639269728,30.0
+multi_item,B2_Rule_Based,T_warn_s,102.89285714285714,58.63885659394718,28.0
+multi_item,B2_Rule_Based,T_stop_s,239.54074074074074,58.56605251442603,27.0
+multi_item,B2_Rule_Based,CFNC,0.002,0.0017838354648109342,30.0
+multi_item,B2_Rule_Based,FPR,0.0,0.0,30.0
+multi_item,B2_Rule_Based,item1_alert_rate,0.0,0.0,30.0
+multi_item,B2_Rule_Based,item1_estop_rate,0.0,0.0,30.0
+multi_item,B3_Fixed_Fuzzy,Hazard_FNR,0.10490666666666668,0.059623201531950124,30.0
+multi_item,B3_Fixed_Fuzzy,T_warn_s,188.56785714285712,63.475694115040945,28.0
+multi_item,B3_Fixed_Fuzzy,T_stop_s,231.2888888888889,57.79968281343188,27.0
+multi_item,B3_Fixed_Fuzzy,CFNC,0.20981666666666665,0.11925830292307514,30.0
+multi_item,B3_Fixed_Fuzzy,FPR,0.0,0.0,30.0
+multi_item,B3_Fixed_Fuzzy,item1_alert_rate,0.0,0.0,30.0
+multi_item,B3_Fixed_Fuzzy,item1_estop_rate,0.0,0.0,30.0
+multi_item,Proposed,Hazard_FNR,0.0,0.0,30.0
+multi_item,Proposed,T_warn_s,0.006666666666666667,0.02537081317024624,30.0
+multi_item,Proposed,T_stop_s,227.82592592592593,58.297463941361144,27.0
+multi_item,Proposed,CFNC,0.0,0.0,30.0
+multi_item,Proposed,FPR,0.0,0.0,30.0
+multi_item,Proposed,item1_alert_rate,0.0,0.0,30.0
+multi_item,Proposed,item1_estop_rate,0.0,0.0,30.0
+occlusion,Proposed (camera ok),Hazard_FNR,0.00597,0.015302110514791628,30.0
+occlusion,Proposed (camera ok),T_warn_s,27.086666666666666,64.76811014653757,30.0
+occlusion,Proposed (camera ok),T_stop_s,228.1222222222222,58.335569920492915,27.0
+occlusion,Proposed (camera ok),CFNC,0.011943333333333332,0.030622469588166158,30.0
+occlusion,Proposed (camera ok),FPR,0.0,0.0,30.0
+occlusion,Proposed (occluded),Hazard_FNR,0.041183333333333336,0.02643367866597632,30.0
+occlusion,Proposed (occluded),T_warn_s,176.4,63.481977611614155,28.0
+occlusion,Proposed (occluded),T_stop_s,229.11111111111114,58.307839117601524,27.0
+occlusion,Proposed (occluded),CFNC,0.08237666666666668,0.052879242282466724,30.0
+occlusion,Proposed (occluded),FPR,0.0,0.0,30.0
+occlusion,B2_Rule_Based,Hazard_FNR,0.001466666666666667,0.0012817911318725552,30.0
+occlusion,B2_Rule_Based,T_warn_s,102.89642857142857,58.640489627982504,28.0
+occlusion,B2_Rule_Based,T_stop_s,239.54074074074074,58.56605251442603,27.0
+occlusion,B2_Rule_Based,CFNC,0.002916666666666666,0.0025686549993619474,30.0
+occlusion,B2_Rule_Based,FPR,0.0,0.0,30.0
+occlusion,B3_Fixed_Fuzzy,Hazard_FNR,0.11941,0.0797779692603813,30.0
+occlusion,B3_Fixed_Fuzzy,T_warn_s,188.70000000000002,63.26070689643798,28.0
+occlusion,B3_Fixed_Fuzzy,T_stop_s,230.9,57.97829832724548,27.0
+occlusion,B3_Fixed_Fuzzy,CFNC,0.2388266666666667,0.15955341324509767,30.0
+occlusion,B3_Fixed_Fuzzy,FPR,0.0,0.0,30.0
+occlusion,B1_Vision_Only (occluded),Hazard_FNR,0.9333333333333333,0.2537081317024624,30.0
+occlusion,B1_Vision_Only (occluded),T_warn_s,,0.0,0.0
+occlusion,B1_Vision_Only (occluded),T_stop_s,,0.0,0.0
+occlusion,B1_Vision_Only (occluded),CFNC,3.8945799999999995,1.4176320920999652,30.0
+occlusion,B1_Vision_Only (occluded),FPR,0.0,0.0,30.0
+occlusion,Proposed (occluded) vs B3_Fixed_Fuzzy,paired_Hazard_FNR,-0.07822666666666667,-5.8022163068840245,2.7440003760066937e-06
+occlusion,Proposed (occluded) vs B3_Fixed_Fuzzy,paired_CFNC,-0.15645,-5.802034900272909,2.7453727721690745e-06
+occlusion,Proposed (occluded) vs Proposed (camera ok),paired_Hazard_FNR,0.03521333333333333,6.430724441698181,4.921455404867674e-07
+occlusion,Proposed (occluded) vs Proposed (camera ok),paired_CFNC,0.07043333333333333,6.430627330341132,4.922750026045706e-07
+multi_item,Proposed vs B3_Fixed_Fuzzy,paired_Hazard_FNR,-0.10490666666666668,-9.637145656329412,1.5162131678794314e-10
+multi_item,Proposed vs B3_Fixed_Fuzzy,paired_CFNC,-0.20981666666666665,-9.636337131847581,1.5190548781786507e-10
+multi_item,Proposed vs B1_Vision_Only,paired_Hazard_FNR,-0.08895000000000002,-10.241367875761606,3.8312425443154535e-11
+multi_item,Proposed vs B1_Vision_Only,paired_CFNC,-0.17788333333333334,-10.241937860326766,3.8263589774496216e-11

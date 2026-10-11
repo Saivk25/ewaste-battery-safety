@@ -1,0 +1,19 @@
+chosen: {'fixed_admissible': '[0.95]', 'gated_admissible': '[0.95, 0.0, 0.1, 30]', 'level_admissible': '[0.0, 0.95, 0.5, 40]', 'fixed_best_unconstrained': '[0.0]', 'paper_adaptive': '[0.85, 0.15]'}
+
+EVALUATION held-out seeds 100-129
+fixed_admissible           [0.95]                   Hazard FNR 0.1210 +/- 0.0824 | T_stop 240.3 | false Critical mild/hard/harder 0/0/30 | false E-stop harder 4 (of 30)
+gated_admissible           [0.95, 0.0, 0.1, 30]     Hazard FNR 0.1210 +/- 0.0824 | T_stop 240.3 | false Critical mild/hard/harder 0/0/30 | false E-stop harder 16 (of 30)
+level_admissible           [0.0, 0.95, 0.5, 40]     Hazard FNR 0.0412 +/- 0.0264 | T_stop 232.5 | false Critical mild/hard/harder 0/0/30 | false E-stop harder 9 (of 30)
+fixed_best_unconstrained   [0.0]                    Hazard FNR 0.0412 +/- 0.0264 | T_stop 229.1 | false Critical mild/hard/harder 0/15/30 | false E-stop harder 25 (of 30)
+paper_adaptive             [0.85, 0.15]             Hazard FNR 0.1012 +/- 0.0583 | T_stop 230.9 | false Critical mild/hard/harder 0/17/30 | false E-stop harder 25 (of 30)
+level minus fixed_admissible: -0.0798, paired t(29) = -5.72, p = 3.43e-06; level lower in 28, higher in 0
+level minus fixed_best_unconstrained: +0.0000, paired t(29) = nan, p = nan; level lower in 0, higher in 0
+level minus paper_adaptive: -0.0600, paired t(29) = -6.55, p = 3.6e-07; level lower in 26, higher in 0
+level minus gated_admissible: -0.0798, paired t(29) = -5.72, p = 3.43e-06; level lower in 28, higher in 0
+
+Already-failing cells: mean seconds from arrival to Emergency Stop
+kind      fixed_admissible  fixed_best_unconstrained  gated_admissible  level_admissible  paper_adaptive
+T0 scale                                                                                                
+60 3                  13.6                      11.3              13.5              13.5            11.3
+80 6                   8.4                       3.7               5.5               4.5             3.9
+90 10                  6.3                       4.6               5.7               4.6             5.2

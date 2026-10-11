@@ -1,0 +1,50 @@
+TUNING seeds 200-229. admissible = no Critical/E-stop in any mild or hard battery-free noise run
+
+fixed: 1/14 admissible
+ kind params      fnr  esc_mild  esc_hard  esc_harder  admissible
+fixed  [0.3] 0.052867         0         9          30       False
+fixed [0.35] 0.057500         0         9          30       False
+fixed  [0.4] 0.057780         0         9          30       False
+fixed [0.45] 0.059220         0         9          30       False
+fixed  [0.5] 0.059710         0         9          30       False
+fixed [0.55] 0.068973         0         9          30       False
+fixed  [0.6] 0.075480         0         9          30       False
+fixed [0.65] 0.082097         0         9          30       False
+fixed  [0.7] 0.086443         0         9          30       False
+fixed [0.75] 0.093137         0         9          30       False
+fixed  [0.8] 0.096420         0        12          30       False
+fixed [0.85] 0.104623         0        12          30       False
+fixed  [0.9] 0.116173         0         9          30       False
+fixed [0.95] 0.120940         0         0          30        True
+
+adaptive: 1/12 admissible
+    kind       params      fnr  esc_mild  esc_hard  esc_harder  admissible
+adaptive    [0.75, 8] 0.059693         0         9          30       False
+adaptive    [0.85, 8] 0.062663         0         9          30       False
+adaptive    [0.95, 8] 0.069970         0         9          30       False
+adaptive    [0.75, 3] 0.078460         0         9          30       False
+adaptive    [0.85, 3] 0.085477         0         9          30       False
+adaptive    [0.75, 1] 0.087593         0         9          30       False
+adaptive    [0.95, 3] 0.091647         0        17          30       False
+adaptive [0.75, 0.15] 0.092497         0         9          30       False
+
+persistence: 5/81 admissible
+       kind                params      fnr  esc_mild  esc_hard  esc_harder  admissible
+persistence [0.85, 0.2, 0.05, 10] 0.104623         0        13          30       False
+persistence [0.85, 0.2, 0.05, 20] 0.104623         0        12          30       False
+persistence  [0.85, 0.2, 0.05, 5] 0.104623         0        13          30       False
+persistence  [0.85, 0.2, 0.1, 10] 0.104623         0        12          30       False
+persistence  [0.85, 0.2, 0.1, 20] 0.104623         0        12          30       False
+persistence   [0.85, 0.2, 0.1, 5] 0.104623         0        13          30       False
+persistence  [0.85, 0.2, 0.2, 10] 0.104623         0        12          30       False
+persistence  [0.85, 0.2, 0.2, 20] 0.104623         0        12          30       False
+
+chosen (lowest tuning FNR among admissible): {'fixed': '[0.95]', 'adaptive': '[0.95, 0.15]', 'persistence': '[0.95, 0.2, 0.2, 20]'}
+
+EVALUATION held-out seeds 100-129
+fixed        [0.95]                 Hazard FNR 0.1210 +/- 0.0824 | T_stop 240.3 | false escalations mild/hard/harder 0/0/30 of 30
+adaptive     [0.95, 0.15]           Hazard FNR 0.1132 +/- 0.0648 | T_stop 239.9 | false escalations mild/hard/harder 0/0/30 of 30
+persistence  [0.95, 0.2, 0.2, 20]   Hazard FNR 0.1210 +/- 0.0824 | T_stop 240.3 | false escalations mild/hard/harder 0/0/30 of 30
+paper adaptive [0.85, 0.15]           Hazard FNR 0.1012 | false escalations mild/hard/harder 0/17/30
+persistence minus fixed: +0.0000, paired t(29) = nan, p = nan; persistence lower in 0, higher in 0 seeds
+adaptive minus fixed: -0.0078, paired t(29) = -1.80, p = 0.083; adaptive lower in 12, higher in 0 seeds

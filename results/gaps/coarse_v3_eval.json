@@ -1,0 +1,184 @@
+{
+ "v2": {
+  "threshold": 0.14108185470104218,
+  "test_accuracy": 0.911849710982659,
+  "n_test": 692,
+  "battery_recall": 0.9849624060150376,
+  "n_battery": 266,
+  "damaged_test_detected": [
+   3,
+   7
+  ],
+  "false_alarms": [
+   18,
+   426
+  ],
+  "commons": {
+   "batteries": [
+    20,
+    26
+   ],
+   "swollen": [
+    2,
+    5
+   ],
+   "devices": [
+    6,
+    6
+   ],
+   "non_battery_correct": [
+    7,
+    12
+   ],
+   "per_photo": {
+    "01_AA_alkaline_battery.jpg": 0.5070000290870667,
+    "02_AA_alkaline_battery.jpg": 0.925000011920929,
+    "03_AA_alkaline_battery.jpg": 0.2840000092983246,
+    "04_18650_Li-ion_cell.jpg": 0.5839999914169312,
+    "05_18650_Li-ion_cell.jpg": 0.8029999732971191,
+    "06_18650_Li-ion_cell.jpg": 0.39399999380111694,
+    "07_LiPo_pouch_battery.jpg": 0.5130000114440918,
+    "08_LiPo_pouch_battery.jpg": 0.22300000488758087,
+    "09_LiPo_pouch_battery.jpg": 0.04500000178813934,
+    "10_Phone_battery.jpg": 0.5910000205039978,
+    "11_Phone_battery.jpg": 0.6200000047683716,
+    "12_Phone_battery.jpg": 0.4779999852180481,
+    "13_Laptop_battery_pack.jpg": 0.25,
+    "14_Laptop_battery_pack.jpg": 0.5379999876022339,
+    "15_9_V_battery.jpg": 0.09099999815225601,
+    "16_9_V_battery.jpg": 0.6949999928474426,
+    "17_Coin_cell.jpg": 0.14000000059604645,
+    "18_Coin_cell.jpg": 0.1589999943971634,
+    "19_Power_bank.jpg": 0.4729999899864197,
+    "20_Power_bank.jpg": 0.13699999451637268,
+    "21_Ni-MH_rechargeable.jpg": 0.4009999930858612,
+    "22_Ni-MH_rechargeable.jpg": 0.7689999938011169,
+    "23_Lead-acid_battery.jpg": 0.6259999871253967,
+    "25_Smartphone.jpg": 0.30799999833106995,
+    "26_Smartphone.jpg": 0.32899999618530273,
+    "27_TV_remote.jpg": 0.5329999923706055,
+    "28_TV_remote.jpg": 0.7789999842643738,
+    "29_E-cigarette_vape.jpg": 0.8339999914169312,
+    "30_E-cigarette_vape.jpg": 0.7549999952316284,
+    "31_Electrolytic_capacitor.jpg": 0.5019999742507935,
+    "32_Electrolytic_capacitor.jpg": 0.34299999475479126,
+    "33_Lipstick.jpg": 0.017000000923871994,
+    "34_Lipstick.jpg": 0.01600000075995922,
+    "35_Glue_stick.jpg": 0.1770000010728836,
+    "36_Aluminium_can.jpg": 0.3490000069141388,
+    "38_Plastic_bottle.jpg": 0.07400000095367432,
+    "39_Plastic_bottle.jpg": 0.04899999871850014,
+    "40_Cardboard_paper.jpg": 0.026000000536441803,
+    "41_Cardboard_paper.jpg": 0.07100000232458115,
+    "42_Swollen_damaged_battery.jpg": 0.20200000703334808,
+    "43_Swollen_damaged_battery.jpg": 0.07999999821186066,
+    "44_Swollen_damaged_battery.jpg": 0.023000000044703484,
+    "45_Swollen_damaged_battery.jpg": 0.12200000137090683,
+    "46_Swollen_damaged_battery.jpg": 0.628000020980835
+   }
+  },
+  "batsort_detected": [
+   174,
+   179
+  ],
+  "batsort_nimh_nicd": [
+   15,
+   15
+  ],
+  "xbat_diverted": [
+   301,
+   420
+  ]
+ },
+ "v3": {
+  "threshold": 0.11126474291086197,
+  "test_accuracy": 0.911849710982659,
+  "n_test": 692,
+  "battery_recall": 0.9924812030075187,
+  "n_battery": 266,
+  "damaged_test_detected": [
+   5,
+   7
+  ],
+  "false_alarms": [
+   21,
+   426
+  ],
+  "commons": {
+   "batteries": [
+    22,
+    26
+   ],
+   "swollen": [
+    3,
+    5
+   ],
+   "devices": [
+    6,
+    6
+   ],
+   "non_battery_correct": [
+    4,
+    12
+   ],
+   "per_photo": {
+    "01_AA_alkaline_battery.jpg": 0.652999997138977,
+    "02_AA_alkaline_battery.jpg": 0.8600000143051147,
+    "03_AA_alkaline_battery.jpg": 0.31700000166893005,
+    "04_18650_Li-ion_cell.jpg": 0.7179999947547913,
+    "05_18650_Li-ion_cell.jpg": 0.8960000276565552,
+    "06_18650_Li-ion_cell.jpg": 0.3930000066757202,
+    "07_LiPo_pouch_battery.jpg": 0.7419999837875366,
+    "08_LiPo_pouch_battery.jpg": 0.3700000047683716,
+    "09_LiPo_pouch_battery.jpg": 0.09099999815225601,
+    "10_Phone_battery.jpg": 0.7429999709129333,
+    "11_Phone_battery.jpg": 0.6140000224113464,
+    "12_Phone_battery.jpg": 0.6510000228881836,
+    "13_Laptop_battery_pack.jpg": 0.4020000100135803,
+    "14_Laptop_battery_pack.jpg": 0.6729999780654907,
+    "15_9_V_battery.jpg": 0.08100000023841858,
+    "16_9_V_battery.jpg": 0.7129999995231628,
+    "17_Coin_cell.jpg": 0.4050000011920929,
+    "18_Coin_cell.jpg": 0.29499998688697815,
+    "19_Power_bank.jpg": 0.41999998688697815,
+    "20_Power_bank.jpg": 0.16099999845027924,
+    "21_Ni-MH_rechargeable.jpg": 0.35100001096725464,
+    "22_Ni-MH_rechargeable.jpg": 0.7160000205039978,
+    "23_Lead-acid_battery.jpg": 0.7540000081062317,
+    "25_Smartphone.jpg": 0.3880000114440918,
+    "26_Smartphone.jpg": 0.4099999964237213,
+    "27_TV_remote.jpg": 0.5889999866485596,
+    "28_TV_remote.jpg": 0.7720000147819519,
+    "29_E-cigarette_vape.jpg": 0.8460000157356262,
+    "30_E-cigarette_vape.jpg": 0.7799999713897705,
+    "31_Electrolytic_capacitor.jpg": 0.5040000081062317,
+    "32_Electrolytic_capacitor.jpg": 0.6259999871253967,
+    "33_Lipstick.jpg": 0.0430000014603138,
+    "34_Lipstick.jpg": 0.03200000151991844,
+    "35_Glue_stick.jpg": 0.1889999955892563,
+    "36_Aluminium_can.jpg": 0.29499998688697815,
+    "38_Plastic_bottle.jpg": 0.1850000023841858,
+    "39_Plastic_bottle.jpg": 0.11299999803304672,
+    "40_Cardboard_paper.jpg": 0.032999999821186066,
+    "41_Cardboard_paper.jpg": 0.04399999976158142,
+    "42_Swollen_damaged_battery.jpg": 0.5419999957084656,
+    "43_Swollen_damaged_battery.jpg": 0.10599999874830246,
+    "44_Swollen_damaged_battery.jpg": 0.08299999684095383,
+    "45_Swollen_damaged_battery.jpg": 0.17900000512599945,
+    "46_Swollen_damaged_battery.jpg": 0.6290000081062317
+   }
+  },
+  "batsort_detected": [
+   176,
+   179
+  ],
+  "batsort_nimh_nicd": [
+   15,
+   15
+  ],
+  "xbat_diverted": [
+   348,
+   420
+  ]
+ }
+}

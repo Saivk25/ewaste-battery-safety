@@ -1,0 +1,2 @@
+Backbone,Stage,Test_Acc,F1_Macro,Precision,Recall,Battery_FNR,CFNC,Source
+EfficientNet-B0,coarse,0.8772,0.8688884469878552,0.8710602700122095,0.8783780804820408,0.0,0.1736,REAL_TRAINED

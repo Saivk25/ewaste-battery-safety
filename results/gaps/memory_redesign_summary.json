@@ -1,0 +1,17 @@
+{
+ "chosen": {
+  "fixed": "[0.95]",
+  "adaptive": "[0.95, 0.15]",
+  "persistence": "[0.95, 0.2, 0.2, 20]"
+ },
+ "persistence_minus_fixed": {
+  "diff": 0.0,
+  "t": NaN,
+  "p": NaN
+ },
+ "adaptive_minus_fixed": {
+  "diff": -0.007759999999999975,
+  "t": -1.7953542093246802,
+  "p": 0.08302593574644423
+ }
+}

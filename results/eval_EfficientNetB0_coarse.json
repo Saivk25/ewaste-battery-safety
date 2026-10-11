@@ -1,0 +1,69 @@
+{
+  "backbone": "EfficientNet-B0",
+  "stage": "coarse",
+  "accuracy": 0.9260312944523471,
+  "f1_macro": 0.9183790544072753,
+  "cfnc": 0.1246,
+  "per_class": {
+    "Battery": {
+      "precision": 0.9901,
+      "recall": 1.0,
+      "f1": 0.995,
+      "fnr": 0.0,
+      "tp": 100,
+      "fn": 0,
+      "fp": 1,
+      "cfnc_contribution": 0.0
+    },
+    "Electronics": {
+      "precision": 0.7833,
+      "recall": 0.8704,
+      "f1": 0.8246,
+      "fnr": 0.1296,
+      "tp": 47,
+      "fn": 7,
+      "fp": 13,
+      "cfnc_contribution": 0.3889
+    },
+    "Glass": {
+      "precision": 0.9147,
+      "recall": 0.9147,
+      "f1": 0.9147,
+      "fnr": 0.0853,
+      "tp": 118,
+      "fn": 11,
+      "fp": 11,
+      "cfnc_contribution": 0.0853
+    },
+    "Metal": {
+      "precision": 0.8984,
+      "recall": 0.9664,
+      "f1": 0.9312,
+      "fnr": 0.0336,
+      "tp": 115,
+      "fn": 4,
+      "fp": 13,
+      "cfnc_contribution": 0.0672
+    },
+    "Paper": {
+      "precision": 0.9565,
+      "recall": 0.9333,
+      "f1": 0.9448,
+      "fnr": 0.0667,
+      "tp": 154,
+      "fn": 11,
+      "fp": 7,
+      "cfnc_contribution": 0.0667
+    },
+    "Plastic": {
+      "precision": 0.9435,
+      "recall": 0.8603,
+      "f1": 0.9,
+      "fnr": 0.1397,
+      "tp": 117,
+      "fn": 19,
+      "fp": 7,
+      "cfnc_contribution": 0.1397
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "rule": "Battery if P_battery >= tau; tau = smallest value with validation false-alarm rate <= 3.05% (v1 level)",
+ "tau": 0.14108648896217346,
+ "val_recall": 0.9922178988326849,
+ "val_fpr": 0.02857142857142857,
+ "test_g12": [
+  95,
+  95
+ ],
+ "test_recybat": [
+  164,
+  164
+ ],
+ "test_false_alarms": [
+  18,
+  426
+ ],
+ "test_fnr_cp95": [
+  0.0,
+  0.014141829285951934
+ ]
+}

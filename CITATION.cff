@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite it as below."
+title: "E-Waste Safety: Hierarchical CNN with Adaptive Fuzzy Temporal Supervisory Risk Model for Pre-Shred Ignition Control"
+type: software
+authors:
+  - family-names: "R"
+    given-names: "Sai Balaji"
+    affiliation: "School of Advanced Sciences, Vellore Institute of Technology, Chennai"
+  - family-names: "R"
+    given-names: "Niketha"
+    affiliation: "School of Advanced Sciences, Vellore Institute of Technology, Chennai"
+  - family-names: "B J"
+    given-names: "Balamurugan"
+    affiliation: "School of Advanced Sciences, Vellore Institute of Technology, Chennai"
+repository-code: "https://github.com/Saivk25/ewaste-battery-safety"
+keywords:
+  - e-waste safety
+  - lithium-ion battery detection
+  - fuzzy inference
+  - adaptive temporal memory
+  - supervisory control
+license: MIT

@@ -1,0 +1,17 @@
+{
+ "rule": "Battery if P_battery >= tau; tau = smallest value with validation false-alarm rate <= 3.05% (v1 level), on data_v3/coarse/val",
+ "tau": 0.11126474291086197,
+ "used": 0.1113,
+ "test_accuracy": 0.911849710982659,
+ "n_test": 692,
+ "battery_recall": 0.9924812030075187,
+ "damaged_test_detected": [
+  5,
+  7
+ ],
+ "test_false_alarms": [
+  21,
+  426
+ ],
+ "model": "checkpoints/best_EfficientNetB0_coarse.pth (v3, data_v3, seed 42)"
+}

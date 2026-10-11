@@ -1,0 +1,33 @@
+{
+ "threshold": 0.1113,
+ "n_test": 692,
+ "accuracy": 0.911849710982659,
+ "accuracy_wilson95": [
+  0.8883879922303406,
+  0.9307639526950564
+ ],
+ "macro_f1": 0.8857529693709667,
+ "battery_precision": 0.9263157894736842,
+ "battery_recall": 0.9924812030075187,
+ "n_battery": 266,
+ "battery_missed": 2,
+ "miss_rate_cp95_upper": 0.02689504527657195,
+ "garbage12": [
+  95,
+  95
+ ],
+ "recybat": [
+  164,
+  164
+ ],
+ "damaged": [
+  5,
+  7
+ ],
+ "false_alarms": [
+  21,
+  426
+ ],
+ "n_train": 5618,
+ "n_val": 683
+}

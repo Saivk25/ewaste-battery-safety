@@ -1,0 +1,36 @@
+Main thermal model vs literature-calibrated model, held-out seeds 100-129.
+FNR = hazardous time with no alert | margin = mean seconds from stop to runaway (>0 = stopped first) | stopped = runs stopped before runaway / runs that reached runaway
+
+single      (IR reading at onset: SEI 45 C, runaway 201 C)
+   paper_gate         FNR 0.0064  margin    21.7 s  stopped 27/27
+   recommended_gate   FNR 0.0064  margin    21.7 s  stopped 27/27
+   B2_Rule            FNR 0.0016  margin    10.3 s  stopped 27/27
+   B2_Debounce_3s     FNR 0.0435  margin     7.3 s  stopped 27/27
+cal_single  (IR reading at onset: SEI 90 C, runaway 200 C)
+   paper_gate         FNR 0.0000  margin   173.5 s  stopped 28/28
+   recommended_gate   FNR 0.0000  margin   172.9 s  stopped 28/28
+   B2_Rule            FNR 0.0000  margin   137.8 s  stopped 28/28
+   B2_Debounce_3s     FNR 0.0000  margin   133.5 s  stopped 28/28
+
+lag20      
+   paper_gate         FNR 0.0285  margin    17.2 s  stopped 23/27
+   recommended_gate   FNR 0.0285  margin    17.2 s  stopped 23/27
+   B2_Rule            FNR 0.0037  margin     4.3 s  stopped 27/27
+   B2_Debounce_3s     FNR 0.0897  margin     1.3 s  stopped 27/27
+cal_lag20  
+   paper_gate         FNR 0.0000  margin   153.5 s  stopped 28/28
+   recommended_gate   FNR 0.0000  margin   152.9 s  stopped 28/28
+   B2_Rule            FNR 0.0000  margin   117.8 s  stopped 28/28
+   B2_Debounce_3s     FNR 0.0000  margin   113.5 s  stopped 28/28
+
+lag60      
+   paper_gate         FNR 0.0557  margin     7.8 s  stopped 23/27
+   recommended_gate   FNR 0.0557  margin     7.8 s  stopped 23/27
+   B2_Rule            FNR 0.0481  margin     4.3 s  stopped 27/27
+   B2_Debounce_3s     FNR 0.1963  margin     1.3 s  stopped 27/27
+cal_lag60  
+   paper_gate         FNR 0.0000  margin   113.5 s  stopped 28/28
+   recommended_gate   FNR 0.0000  margin   112.9 s  stopped 28/28
+   B2_Rule            FNR 0.0000  margin    77.8 s  stopped 28/28
+   B2_Debounce_3s     FNR 0.0000  margin    73.5 s  stopped 28/28
+

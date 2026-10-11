@@ -1,0 +1,33 @@
+Coarse EfficientNet-B0, Battery if P_battery >= 0.1113 (the divert threshold). Near-duplicate = same MD5 or dHash Hamming <= 4 to any of our 5169 coarse images; excluded from the counts.
+
+BatSort (web photos, 360 images, 181 near-duplicates of ours, 0 exact)
+  Li-ion 18650           n= 17  detected as battery 1.000  (17/17), median P 0.792
+  Ni-Cd                  n=  7  detected as battery 1.000  (7/7), median P 0.678
+  Ni-MH                  n=  8  detected as battery 1.000  (8/8), median P 0.682
+  alkaline               n=102  detected as battery 0.980  (100/102), median P 0.669
+  alkaline (industrial)  n=  6  detected as battery 1.000  (6/6), median P 0.857
+  lithium primary        n= 13  detected as battery 1.000  (13/13), median P 0.650
+  other                  n= 26  detected as battery 0.962  (25/26), median P 0.733
+  ALL                    n=179  detected as battery 0.983
+  Ni-MH including near-duplicates: 21/21
+  Ni-Cd including near-duplicates: 24/24
+  ALL including near-duplicates: 356/360 = 0.989
+
+XBAT+ RGB (real WEEE devices that hold a battery, 421 images, 1 near-duplicates)
+  camera alone diverts (P_battery >= 0.1113): 0.829 (348/420)
+  top class: Battery 210, Electronics 116, Glass 45, Paper 26, Plastic 12, Metal 11
+  AlarmClock      n=  7  diverted by camera 0.571  top=Battery
+  ComputerMouse   n= 12  diverted by camera 0.667  top=Glass
+  E-Razor         n= 14  diverted by camera 0.857  top=Electronics
+  E-Toothbrush    n= 14  diverted by camera 0.929  top=Battery
+  FireAlarm       n= 17  diverted by camera 0.647  top=Electronics
+  FlashLight      n=  6  diverted by camera 0.833  top=Electronics
+  GameController  n= 11  diverted by camera 0.727  top=Electronics
+  KidToy          n= 19  diverted by camera 0.421  top=Electronics
+  MobilePhone     n=102  diverted by camera 0.882  top=Battery
+  NewsRadio       n=  8  diverted by camera 1.000  top=Battery
+  NightTorch      n= 18  diverted by camera 0.833  top=Electronics
+  PhotoCamera     n= 13  diverted by camera 0.923  top=Battery
+  RemoteControl   n=144  diverted by camera 0.882  top=Battery
+  Thermometer     n=  8  diverted by camera 0.500  top=Battery
+  iPad            n= 27  diverted by camera 0.852  top=Battery

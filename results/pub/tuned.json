@@ -1,0 +1,7 @@
+{
+ "tuned": {
+  "b2_k": 3.0,
+  "cusum_h": 16.0,
+  "dwell": true
+ }
+}

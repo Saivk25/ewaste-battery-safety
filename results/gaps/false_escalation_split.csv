@@ -1,0 +1,481 @@
+seed,noise,kind,params,critical,estop,time_crit_s
+100,hard,fixed,"(0.3,)",True,False,1.3
+100,hard,fixed,"(0.5,)",True,False,1.2000000000000002
+100,hard,fixed,"(0.7,)",True,False,1.1
+100,hard,fixed,"(0.85,)",True,False,1.1
+100,hard,fixed,"(0.95,)",False,False,0.0
+100,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+100,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+100,hard,adaptive,"(0.75, 8)",True,False,1.4000000000000001
+100,harder,fixed,"(0.3,)",True,True,2.2
+100,harder,fixed,"(0.5,)",True,True,2.2
+100,harder,fixed,"(0.7,)",True,True,2.2
+100,harder,fixed,"(0.85,)",True,True,2.2
+100,harder,fixed,"(0.95,)",True,False,14.8
+100,harder,adaptive,"(0.85, 0.15)",True,True,2.2
+100,harder,adaptive,"(0.95, 0.15)",True,True,11.4
+100,harder,adaptive,"(0.75, 8)",True,True,2.2
+101,hard,fixed,"(0.3,)",False,False,0.0
+101,hard,fixed,"(0.5,)",False,False,0.0
+101,hard,fixed,"(0.7,)",False,False,0.0
+101,hard,fixed,"(0.85,)",False,False,0.0
+101,hard,fixed,"(0.95,)",False,False,0.0
+101,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+101,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+101,hard,adaptive,"(0.75, 8)",False,False,0.0
+101,harder,fixed,"(0.3,)",True,False,9.9
+101,harder,fixed,"(0.5,)",True,False,9.9
+101,harder,fixed,"(0.7,)",True,False,9.9
+101,harder,fixed,"(0.85,)",True,False,10.100000000000001
+101,harder,fixed,"(0.95,)",True,False,12.4
+101,harder,adaptive,"(0.85, 0.15)",True,False,10.100000000000001
+101,harder,adaptive,"(0.95, 0.15)",True,False,12.600000000000001
+101,harder,adaptive,"(0.75, 8)",True,False,9.9
+102,hard,fixed,"(0.3,)",False,False,0.0
+102,hard,fixed,"(0.5,)",False,False,0.0
+102,hard,fixed,"(0.7,)",False,False,0.0
+102,hard,fixed,"(0.85,)",False,False,0.0
+102,hard,fixed,"(0.95,)",False,False,0.0
+102,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+102,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+102,hard,adaptive,"(0.75, 8)",False,False,0.0
+102,harder,fixed,"(0.3,)",True,True,6.6000000000000005
+102,harder,fixed,"(0.5,)",True,True,6.6000000000000005
+102,harder,fixed,"(0.7,)",True,True,6.6000000000000005
+102,harder,fixed,"(0.85,)",True,True,6.6000000000000005
+102,harder,fixed,"(0.95,)",True,False,13.9
+102,harder,adaptive,"(0.85, 0.15)",True,True,6.6000000000000005
+102,harder,adaptive,"(0.95, 0.15)",True,False,14.100000000000001
+102,harder,adaptive,"(0.75, 8)",True,True,6.6000000000000005
+103,hard,fixed,"(0.3,)",False,False,0.0
+103,hard,fixed,"(0.5,)",False,False,0.0
+103,hard,fixed,"(0.7,)",True,False,1.1
+103,hard,fixed,"(0.85,)",True,False,2.2
+103,hard,fixed,"(0.95,)",False,False,0.0
+103,hard,adaptive,"(0.85, 0.15)",True,False,2.2
+103,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+103,hard,adaptive,"(0.75, 8)",False,False,0.0
+103,harder,fixed,"(0.3,)",True,True,2.2
+103,harder,fixed,"(0.5,)",True,True,2.2
+103,harder,fixed,"(0.7,)",True,True,2.2
+103,harder,fixed,"(0.85,)",True,True,2.2
+103,harder,fixed,"(0.95,)",True,True,3.2
+103,harder,adaptive,"(0.85, 0.15)",True,True,2.2
+103,harder,adaptive,"(0.95, 0.15)",True,True,3.1
+103,harder,adaptive,"(0.75, 8)",True,True,2.2
+104,hard,fixed,"(0.3,)",False,False,0.0
+104,hard,fixed,"(0.5,)",False,False,0.0
+104,hard,fixed,"(0.7,)",False,False,0.0
+104,hard,fixed,"(0.85,)",False,False,0.0
+104,hard,fixed,"(0.95,)",False,False,0.0
+104,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+104,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+104,hard,adaptive,"(0.75, 8)",False,False,0.0
+104,harder,fixed,"(0.3,)",True,True,3.3000000000000003
+104,harder,fixed,"(0.5,)",True,True,3.5
+104,harder,fixed,"(0.7,)",True,True,3.8000000000000003
+104,harder,fixed,"(0.85,)",True,True,4.1000000000000005
+104,harder,fixed,"(0.95,)",True,False,15.4
+104,harder,adaptive,"(0.85, 0.15)",True,True,4.2
+104,harder,adaptive,"(0.95, 0.15)",True,False,15.5
+104,harder,adaptive,"(0.75, 8)",True,True,3.3000000000000003
+105,hard,fixed,"(0.3,)",True,False,1.1
+105,hard,fixed,"(0.5,)",True,False,1.1
+105,hard,fixed,"(0.7,)",True,False,1.1
+105,hard,fixed,"(0.85,)",False,False,0.0
+105,hard,fixed,"(0.95,)",False,False,0.0
+105,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+105,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+105,hard,adaptive,"(0.75, 8)",True,False,1.1
+105,harder,fixed,"(0.3,)",True,True,7.7
+105,harder,fixed,"(0.5,)",True,True,7.800000000000001
+105,harder,fixed,"(0.7,)",True,True,7.9
+105,harder,fixed,"(0.85,)",True,True,8.1
+105,harder,fixed,"(0.95,)",True,False,11.9
+105,harder,adaptive,"(0.85, 0.15)",True,True,8.1
+105,harder,adaptive,"(0.95, 0.15)",True,False,12.0
+105,harder,adaptive,"(0.75, 8)",True,True,7.7
+106,hard,fixed,"(0.3,)",False,False,0.0
+106,hard,fixed,"(0.5,)",False,False,0.0
+106,hard,fixed,"(0.7,)",False,False,0.0
+106,hard,fixed,"(0.85,)",False,False,0.0
+106,hard,fixed,"(0.95,)",False,False,0.0
+106,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+106,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+106,hard,adaptive,"(0.75, 8)",False,False,0.0
+106,harder,fixed,"(0.3,)",True,False,11.0
+106,harder,fixed,"(0.5,)",True,False,11.0
+106,harder,fixed,"(0.7,)",True,False,11.0
+106,harder,fixed,"(0.85,)",True,False,11.0
+106,harder,fixed,"(0.95,)",True,False,15.9
+106,harder,adaptive,"(0.85, 0.15)",True,False,11.0
+106,harder,adaptive,"(0.95, 0.15)",True,False,15.9
+106,harder,adaptive,"(0.75, 8)",True,False,11.0
+107,hard,fixed,"(0.3,)",True,False,1.1
+107,hard,fixed,"(0.5,)",True,False,1.1
+107,hard,fixed,"(0.7,)",True,False,1.1
+107,hard,fixed,"(0.85,)",True,False,1.1
+107,hard,fixed,"(0.95,)",False,False,0.0
+107,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+107,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+107,hard,adaptive,"(0.75, 8)",True,False,1.1
+107,harder,fixed,"(0.3,)",True,True,7.7
+107,harder,fixed,"(0.5,)",True,True,7.800000000000001
+107,harder,fixed,"(0.7,)",True,True,7.9
+107,harder,fixed,"(0.85,)",True,True,8.0
+107,harder,fixed,"(0.95,)",True,False,14.3
+107,harder,adaptive,"(0.85, 0.15)",True,True,8.1
+107,harder,adaptive,"(0.95, 0.15)",True,False,14.5
+107,harder,adaptive,"(0.75, 8)",True,True,7.7
+108,hard,fixed,"(0.3,)",True,False,1.1
+108,hard,fixed,"(0.5,)",True,False,1.1
+108,hard,fixed,"(0.7,)",True,False,1.1
+108,hard,fixed,"(0.85,)",True,False,1.1
+108,hard,fixed,"(0.95,)",False,False,0.0
+108,hard,adaptive,"(0.85, 0.15)",True,False,1.2000000000000002
+108,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+108,hard,adaptive,"(0.75, 8)",True,False,1.1
+108,harder,fixed,"(0.3,)",True,True,6.6000000000000005
+108,harder,fixed,"(0.5,)",True,True,6.6000000000000005
+108,harder,fixed,"(0.7,)",True,True,6.6000000000000005
+108,harder,fixed,"(0.85,)",True,True,6.6000000000000005
+108,harder,fixed,"(0.95,)",True,False,13.600000000000001
+108,harder,adaptive,"(0.85, 0.15)",True,True,6.6000000000000005
+108,harder,adaptive,"(0.95, 0.15)",True,False,13.9
+108,harder,adaptive,"(0.75, 8)",True,True,6.6000000000000005
+109,hard,fixed,"(0.3,)",False,False,0.0
+109,hard,fixed,"(0.5,)",False,False,0.0
+109,hard,fixed,"(0.7,)",False,False,0.0
+109,hard,fixed,"(0.85,)",True,False,2.2
+109,hard,fixed,"(0.95,)",False,False,0.0
+109,hard,adaptive,"(0.85, 0.15)",True,False,2.2
+109,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+109,hard,adaptive,"(0.75, 8)",False,False,0.0
+109,harder,fixed,"(0.3,)",True,True,5.5
+109,harder,fixed,"(0.5,)",True,True,5.6000000000000005
+109,harder,fixed,"(0.7,)",True,True,5.800000000000001
+109,harder,fixed,"(0.85,)",True,True,6.2
+109,harder,fixed,"(0.95,)",True,True,11.4
+109,harder,adaptive,"(0.85, 0.15)",True,True,6.2
+109,harder,adaptive,"(0.95, 0.15)",True,True,11.5
+109,harder,adaptive,"(0.75, 8)",True,True,5.5
+110,hard,fixed,"(0.3,)",True,False,1.1
+110,hard,fixed,"(0.5,)",True,False,1.1
+110,hard,fixed,"(0.7,)",True,False,1.1
+110,hard,fixed,"(0.85,)",True,False,1.1
+110,hard,fixed,"(0.95,)",False,False,0.0
+110,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+110,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+110,hard,adaptive,"(0.75, 8)",True,False,1.1
+110,harder,fixed,"(0.3,)",True,True,1.1
+110,harder,fixed,"(0.5,)",True,True,1.1
+110,harder,fixed,"(0.7,)",True,True,1.1
+110,harder,fixed,"(0.85,)",True,True,1.1
+110,harder,fixed,"(0.95,)",True,False,13.5
+110,harder,adaptive,"(0.85, 0.15)",True,True,1.1
+110,harder,adaptive,"(0.95, 0.15)",True,False,13.9
+110,harder,adaptive,"(0.75, 8)",True,True,1.1
+111,hard,fixed,"(0.3,)",True,False,1.1
+111,hard,fixed,"(0.5,)",True,False,1.1
+111,hard,fixed,"(0.7,)",True,False,1.1
+111,hard,fixed,"(0.85,)",True,False,1.1
+111,hard,fixed,"(0.95,)",False,False,0.0
+111,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+111,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+111,hard,adaptive,"(0.75, 8)",True,False,1.1
+111,harder,fixed,"(0.3,)",True,True,1.2000000000000002
+111,harder,fixed,"(0.5,)",True,True,1.4000000000000001
+111,harder,fixed,"(0.7,)",True,True,8.8
+111,harder,fixed,"(0.85,)",True,True,2.1
+111,harder,fixed,"(0.95,)",True,False,15.0
+111,harder,adaptive,"(0.85, 0.15)",True,True,2.2
+111,harder,adaptive,"(0.95, 0.15)",True,True,12.700000000000001
+111,harder,adaptive,"(0.75, 8)",True,True,1.1
+112,hard,fixed,"(0.3,)",False,False,0.0
+112,hard,fixed,"(0.5,)",False,False,0.0
+112,hard,fixed,"(0.7,)",False,False,0.0
+112,hard,fixed,"(0.85,)",False,False,0.0
+112,hard,fixed,"(0.95,)",False,False,0.0
+112,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+112,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+112,hard,adaptive,"(0.75, 8)",False,False,0.0
+112,harder,fixed,"(0.3,)",True,True,2.2
+112,harder,fixed,"(0.5,)",True,True,2.2
+112,harder,fixed,"(0.7,)",True,True,2.2
+112,harder,fixed,"(0.85,)",True,True,2.2
+112,harder,fixed,"(0.95,)",True,False,13.600000000000001
+112,harder,adaptive,"(0.85, 0.15)",True,True,2.2
+112,harder,adaptive,"(0.95, 0.15)",True,False,13.8
+112,harder,adaptive,"(0.75, 8)",True,True,2.2
+113,hard,fixed,"(0.3,)",True,False,1.6
+113,hard,fixed,"(0.5,)",True,False,1.6
+113,hard,fixed,"(0.7,)",True,False,1.6
+113,hard,fixed,"(0.85,)",True,False,1.6
+113,hard,fixed,"(0.95,)",False,False,0.0
+113,hard,adaptive,"(0.85, 0.15)",True,False,1.7000000000000002
+113,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+113,hard,adaptive,"(0.75, 8)",True,False,1.6
+113,harder,fixed,"(0.3,)",True,True,1.1
+113,harder,fixed,"(0.5,)",True,True,1.1
+113,harder,fixed,"(0.7,)",True,True,1.1
+113,harder,fixed,"(0.85,)",True,True,1.1
+113,harder,fixed,"(0.95,)",True,True,2.0
+113,harder,adaptive,"(0.85, 0.15)",True,True,1.1
+113,harder,adaptive,"(0.95, 0.15)",True,True,2.0
+113,harder,adaptive,"(0.75, 8)",True,True,1.1
+114,hard,fixed,"(0.3,)",False,False,0.0
+114,hard,fixed,"(0.5,)",False,False,0.0
+114,hard,fixed,"(0.7,)",False,False,0.0
+114,hard,fixed,"(0.85,)",True,False,1.1
+114,hard,fixed,"(0.95,)",False,False,0.0
+114,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+114,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+114,hard,adaptive,"(0.75, 8)",False,False,0.0
+114,harder,fixed,"(0.3,)",True,True,8.8
+114,harder,fixed,"(0.5,)",True,True,8.8
+114,harder,fixed,"(0.7,)",True,True,9.0
+114,harder,fixed,"(0.85,)",True,True,9.200000000000001
+114,harder,fixed,"(0.95,)",True,False,13.100000000000001
+114,harder,adaptive,"(0.85, 0.15)",True,True,9.3
+114,harder,adaptive,"(0.95, 0.15)",True,False,13.200000000000001
+114,harder,adaptive,"(0.75, 8)",True,True,8.8
+115,hard,fixed,"(0.3,)",False,False,0.0
+115,hard,fixed,"(0.5,)",False,False,0.0
+115,hard,fixed,"(0.7,)",False,False,0.0
+115,hard,fixed,"(0.85,)",False,False,0.0
+115,hard,fixed,"(0.95,)",False,False,0.0
+115,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+115,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+115,hard,adaptive,"(0.75, 8)",False,False,0.0
+115,harder,fixed,"(0.3,)",True,False,11.0
+115,harder,fixed,"(0.5,)",True,False,11.0
+115,harder,fixed,"(0.7,)",True,False,11.0
+115,harder,fixed,"(0.85,)",True,False,11.0
+115,harder,fixed,"(0.95,)",True,False,11.8
+115,harder,adaptive,"(0.85, 0.15)",True,False,11.0
+115,harder,adaptive,"(0.95, 0.15)",True,False,11.9
+115,harder,adaptive,"(0.75, 8)",True,False,11.0
+116,hard,fixed,"(0.3,)",True,False,1.1
+116,hard,fixed,"(0.5,)",True,False,1.1
+116,hard,fixed,"(0.7,)",True,False,1.1
+116,hard,fixed,"(0.85,)",True,False,1.1
+116,hard,fixed,"(0.95,)",False,False,0.0
+116,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+116,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+116,hard,adaptive,"(0.75, 8)",True,False,1.1
+116,harder,fixed,"(0.3,)",True,True,1.1
+116,harder,fixed,"(0.5,)",True,True,1.1
+116,harder,fixed,"(0.7,)",True,True,1.1
+116,harder,fixed,"(0.85,)",True,True,1.1
+116,harder,fixed,"(0.95,)",True,False,11.8
+116,harder,adaptive,"(0.85, 0.15)",True,True,1.1
+116,harder,adaptive,"(0.95, 0.15)",True,False,11.9
+116,harder,adaptive,"(0.75, 8)",True,True,1.1
+117,hard,fixed,"(0.3,)",False,False,0.0
+117,hard,fixed,"(0.5,)",False,False,0.0
+117,hard,fixed,"(0.7,)",False,False,0.0
+117,hard,fixed,"(0.85,)",False,False,0.0
+117,hard,fixed,"(0.95,)",False,False,0.0
+117,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+117,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+117,hard,adaptive,"(0.75, 8)",False,False,0.0
+117,harder,fixed,"(0.3,)",True,False,11.0
+117,harder,fixed,"(0.5,)",True,False,11.100000000000001
+117,harder,fixed,"(0.7,)",True,False,11.200000000000001
+117,harder,fixed,"(0.85,)",True,False,11.3
+117,harder,fixed,"(0.95,)",True,False,12.600000000000001
+117,harder,adaptive,"(0.85, 0.15)",True,False,11.4
+117,harder,adaptive,"(0.95, 0.15)",True,False,12.0
+117,harder,adaptive,"(0.75, 8)",True,False,11.0
+118,hard,fixed,"(0.3,)",True,False,1.1
+118,hard,fixed,"(0.5,)",True,False,1.1
+118,hard,fixed,"(0.7,)",True,False,1.1
+118,hard,fixed,"(0.85,)",True,False,1.1
+118,hard,fixed,"(0.95,)",False,False,0.0
+118,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+118,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+118,hard,adaptive,"(0.75, 8)",True,False,1.1
+118,harder,fixed,"(0.3,)",True,True,5.5
+118,harder,fixed,"(0.5,)",True,True,5.5
+118,harder,fixed,"(0.7,)",True,True,5.5
+118,harder,fixed,"(0.85,)",True,True,5.5
+118,harder,fixed,"(0.95,)",True,False,11.8
+118,harder,adaptive,"(0.85, 0.15)",True,True,5.5
+118,harder,adaptive,"(0.95, 0.15)",True,False,11.9
+118,harder,adaptive,"(0.75, 8)",True,True,5.5
+119,hard,fixed,"(0.3,)",True,False,1.2000000000000002
+119,hard,fixed,"(0.5,)",True,False,1.2000000000000002
+119,hard,fixed,"(0.7,)",True,False,1.2000000000000002
+119,hard,fixed,"(0.85,)",True,False,1.1
+119,hard,fixed,"(0.95,)",False,False,0.0
+119,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+119,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+119,hard,adaptive,"(0.75, 8)",True,False,1.2000000000000002
+119,harder,fixed,"(0.3,)",True,True,1.1
+119,harder,fixed,"(0.5,)",True,True,1.1
+119,harder,fixed,"(0.7,)",True,True,1.1
+119,harder,fixed,"(0.85,)",True,True,1.1
+119,harder,fixed,"(0.95,)",True,False,12.0
+119,harder,adaptive,"(0.85, 0.15)",True,True,1.1
+119,harder,adaptive,"(0.95, 0.15)",True,False,12.100000000000001
+119,harder,adaptive,"(0.75, 8)",True,True,1.1
+120,hard,fixed,"(0.3,)",True,False,1.1
+120,hard,fixed,"(0.5,)",True,False,1.1
+120,hard,fixed,"(0.7,)",True,False,1.1
+120,hard,fixed,"(0.85,)",True,False,1.1
+120,hard,fixed,"(0.95,)",False,False,0.0
+120,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+120,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+120,hard,adaptive,"(0.75, 8)",True,False,1.1
+120,harder,fixed,"(0.3,)",True,True,8.8
+120,harder,fixed,"(0.5,)",True,True,8.8
+120,harder,fixed,"(0.7,)",True,True,8.8
+120,harder,fixed,"(0.85,)",True,True,8.8
+120,harder,fixed,"(0.95,)",True,False,12.600000000000001
+120,harder,adaptive,"(0.85, 0.15)",True,True,8.8
+120,harder,adaptive,"(0.95, 0.15)",True,False,12.8
+120,harder,adaptive,"(0.75, 8)",True,True,8.8
+121,hard,fixed,"(0.3,)",True,False,1.1
+121,hard,fixed,"(0.5,)",True,False,1.1
+121,hard,fixed,"(0.7,)",True,False,1.1
+121,hard,fixed,"(0.85,)",True,False,1.5
+121,hard,fixed,"(0.95,)",False,False,0.0
+121,hard,adaptive,"(0.85, 0.15)",True,False,1.5
+121,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+121,hard,adaptive,"(0.75, 8)",True,False,1.1
+121,harder,fixed,"(0.3,)",True,True,5.5
+121,harder,fixed,"(0.5,)",True,True,5.5
+121,harder,fixed,"(0.7,)",True,True,5.5
+121,harder,fixed,"(0.85,)",True,True,5.5
+121,harder,fixed,"(0.95,)",True,True,8.1
+121,harder,adaptive,"(0.85, 0.15)",True,True,5.5
+121,harder,adaptive,"(0.95, 0.15)",True,True,7.300000000000001
+121,harder,adaptive,"(0.75, 8)",True,True,5.5
+122,hard,fixed,"(0.3,)",False,False,0.0
+122,hard,fixed,"(0.5,)",False,False,0.0
+122,hard,fixed,"(0.7,)",False,False,0.0
+122,hard,fixed,"(0.85,)",False,False,0.0
+122,hard,fixed,"(0.95,)",False,False,0.0
+122,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+122,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+122,hard,adaptive,"(0.75, 8)",False,False,0.0
+122,harder,fixed,"(0.3,)",True,True,7.7
+122,harder,fixed,"(0.5,)",True,True,7.7
+122,harder,fixed,"(0.7,)",True,True,7.7
+122,harder,fixed,"(0.85,)",True,True,7.7
+122,harder,fixed,"(0.95,)",True,False,11.4
+122,harder,adaptive,"(0.85, 0.15)",True,True,7.7
+122,harder,adaptive,"(0.95, 0.15)",True,False,11.700000000000001
+122,harder,adaptive,"(0.75, 8)",True,True,7.7
+123,hard,fixed,"(0.3,)",True,False,1.1
+123,hard,fixed,"(0.5,)",True,False,1.1
+123,hard,fixed,"(0.7,)",True,False,1.1
+123,hard,fixed,"(0.85,)",True,False,1.1
+123,hard,fixed,"(0.95,)",False,False,0.0
+123,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+123,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+123,hard,adaptive,"(0.75, 8)",True,False,1.1
+123,harder,fixed,"(0.3,)",True,True,1.1
+123,harder,fixed,"(0.5,)",True,True,1.1
+123,harder,fixed,"(0.7,)",True,True,1.1
+123,harder,fixed,"(0.85,)",True,True,1.1
+123,harder,fixed,"(0.95,)",True,False,11.3
+123,harder,adaptive,"(0.85, 0.15)",True,True,1.1
+123,harder,adaptive,"(0.95, 0.15)",True,False,11.5
+123,harder,adaptive,"(0.75, 8)",True,True,1.1
+124,hard,fixed,"(0.3,)",True,False,1.1
+124,hard,fixed,"(0.5,)",True,False,1.1
+124,hard,fixed,"(0.7,)",True,False,1.1
+124,hard,fixed,"(0.85,)",True,False,1.1
+124,hard,fixed,"(0.95,)",False,False,0.0
+124,hard,adaptive,"(0.85, 0.15)",True,False,1.1
+124,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+124,hard,adaptive,"(0.75, 8)",True,False,1.1
+124,harder,fixed,"(0.3,)",True,True,5.5
+124,harder,fixed,"(0.5,)",True,True,5.5
+124,harder,fixed,"(0.7,)",True,True,5.5
+124,harder,fixed,"(0.85,)",True,True,5.5
+124,harder,fixed,"(0.95,)",True,False,12.600000000000001
+124,harder,adaptive,"(0.85, 0.15)",True,True,5.5
+124,harder,adaptive,"(0.95, 0.15)",True,True,7.0
+124,harder,adaptive,"(0.75, 8)",True,True,5.5
+125,hard,fixed,"(0.3,)",False,False,0.0
+125,hard,fixed,"(0.5,)",False,False,0.0
+125,hard,fixed,"(0.7,)",False,False,0.0
+125,hard,fixed,"(0.85,)",False,False,0.0
+125,hard,fixed,"(0.95,)",False,False,0.0
+125,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+125,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+125,hard,adaptive,"(0.75, 8)",False,False,0.0
+125,harder,fixed,"(0.3,)",True,False,11.0
+125,harder,fixed,"(0.5,)",True,False,11.0
+125,harder,fixed,"(0.7,)",True,False,11.0
+125,harder,fixed,"(0.85,)",True,False,11.0
+125,harder,fixed,"(0.95,)",True,False,11.0
+125,harder,adaptive,"(0.85, 0.15)",True,False,11.0
+125,harder,adaptive,"(0.95, 0.15)",True,False,11.0
+125,harder,adaptive,"(0.75, 8)",True,False,11.0
+126,hard,fixed,"(0.3,)",True,False,2.5
+126,hard,fixed,"(0.5,)",True,False,2.4000000000000004
+126,hard,fixed,"(0.7,)",True,False,2.2
+126,hard,fixed,"(0.85,)",True,False,2.2
+126,hard,fixed,"(0.95,)",False,False,0.0
+126,hard,adaptive,"(0.85, 0.15)",True,False,2.2
+126,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+126,hard,adaptive,"(0.75, 8)",True,False,2.6
+126,harder,fixed,"(0.3,)",True,True,2.2
+126,harder,fixed,"(0.5,)",True,True,2.2
+126,harder,fixed,"(0.7,)",True,True,2.2
+126,harder,fixed,"(0.85,)",True,True,2.2
+126,harder,fixed,"(0.95,)",True,False,13.100000000000001
+126,harder,adaptive,"(0.85, 0.15)",True,True,2.2
+126,harder,adaptive,"(0.95, 0.15)",True,True,8.6
+126,harder,adaptive,"(0.75, 8)",True,True,2.2
+127,hard,fixed,"(0.3,)",False,False,0.0
+127,hard,fixed,"(0.5,)",False,False,0.0
+127,hard,fixed,"(0.7,)",False,False,0.0
+127,hard,fixed,"(0.85,)",False,False,0.0
+127,hard,fixed,"(0.95,)",False,False,0.0
+127,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+127,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+127,hard,adaptive,"(0.75, 8)",False,False,0.0
+127,harder,fixed,"(0.3,)",True,True,11.0
+127,harder,fixed,"(0.5,)",True,True,11.0
+127,harder,fixed,"(0.7,)",True,True,11.0
+127,harder,fixed,"(0.85,)",True,True,11.0
+127,harder,fixed,"(0.95,)",True,False,12.200000000000001
+127,harder,adaptive,"(0.85, 0.15)",True,True,11.0
+127,harder,adaptive,"(0.95, 0.15)",True,False,12.200000000000001
+127,harder,adaptive,"(0.75, 8)",True,True,11.0
+128,hard,fixed,"(0.3,)",False,False,0.0
+128,hard,fixed,"(0.5,)",False,False,0.0
+128,hard,fixed,"(0.7,)",False,False,0.0
+128,hard,fixed,"(0.85,)",False,False,0.0
+128,hard,fixed,"(0.95,)",False,False,0.0
+128,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+128,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+128,hard,adaptive,"(0.75, 8)",False,False,0.0
+128,harder,fixed,"(0.3,)",True,True,6.6000000000000005
+128,harder,fixed,"(0.5,)",True,True,6.6000000000000005
+128,harder,fixed,"(0.7,)",True,True,6.6000000000000005
+128,harder,fixed,"(0.85,)",True,True,6.6000000000000005
+128,harder,fixed,"(0.95,)",True,False,15.200000000000001
+128,harder,adaptive,"(0.85, 0.15)",True,True,6.6000000000000005
+128,harder,adaptive,"(0.95, 0.15)",True,False,15.600000000000001
+128,harder,adaptive,"(0.75, 8)",True,True,6.6000000000000005
+129,hard,fixed,"(0.3,)",False,False,0.0
+129,hard,fixed,"(0.5,)",False,False,0.0
+129,hard,fixed,"(0.7,)",False,False,0.0
+129,hard,fixed,"(0.85,)",False,False,0.0
+129,hard,fixed,"(0.95,)",False,False,0.0
+129,hard,adaptive,"(0.85, 0.15)",False,False,0.0
+129,hard,adaptive,"(0.95, 0.15)",False,False,0.0
+129,hard,adaptive,"(0.75, 8)",False,False,0.0
+129,harder,fixed,"(0.3,)",True,True,8.8
+129,harder,fixed,"(0.5,)",True,True,8.8
+129,harder,fixed,"(0.7,)",True,True,8.8
+129,harder,fixed,"(0.85,)",True,True,8.8
+129,harder,fixed,"(0.95,)",True,False,12.3
+129,harder,adaptive,"(0.85, 0.15)",True,True,8.8
+129,harder,adaptive,"(0.95, 0.15)",True,False,12.4
+129,harder,adaptive,"(0.75, 8)",True,True,8.8

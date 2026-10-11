@@ -1,0 +1,53 @@
+=== A/B. Hazard FNR by temporal filter (no CNN fusion), mean +/- sd over 30 seeds ===
+fixed_0.50             FNR 0.0541 +/- 0.0297 | T_stop 229.3 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0471 p=2.88e-06
+fixed_0.60             FNR 0.0669 +/- 0.0455 | T_stop 229.4 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0343 p=2.83e-06
+fixed_0.70             FNR 0.0762 +/- 0.0468 | T_stop 230.2 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0250 p=2.56e-05
+fixed_0.73             FNR 0.0783 +/- 0.0469 | T_stop 230.2 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0229 p=7.21e-05
+fixed_0.75             FNR 0.0842 +/- 0.0560 | T_stop 230.2 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0171 p=0.000445
+fixed_0.80             FNR 0.0954 +/- 0.0577 | T_stop 230.7 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0058 p=0.0233
+fixed_0.85             FNR 0.1044 +/- 0.0599 | T_stop 231.0 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) -0.0032 p=0.113
+adapt_b0.85_l0.15      FNR 0.1012 +/- 0.0583 | T_stop 230.9 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0000 p=nan
+adapt_b0.85_l0.5       FNR 0.0954 +/- 0.0577 | T_stop 230.8 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0058 p=0.0233
+adapt_b0.85_l1         FNR 0.0875 +/- 0.0557 | T_stop 230.8 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0137 p=0.00112
+adapt_b0.85_l2.5       FNR 0.0712 +/- 0.0468 | T_stop 230.7 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0300 p=8.07e-06
+adapt_b0.85_l5         FNR 0.0669 +/- 0.0455 | T_stop 229.8 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0343 p=2.83e-06
+adapt_b0.95_l0.15      FNR 0.1132 +/- 0.0648 | T_stop 239.9 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) -0.0120 p=0.000332
+adapt_b0.95_l2.5       FNR 0.0861 +/- 0.0561 | T_stop 231.3 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0151 p=0.000572
+adapt_b0.75_l0.15      FNR 0.0837 +/- 0.0563 | T_stop 230.2 (n=27) | vs adaptive(0.85,0.15): diff(adaptive-this) +0.0175 p=0.000319
+
+=== Excluding stalled seeds (no hazardous steps or never ran away): adaptive vs fixed_0.85 ===
+stalled seeds: [107, 122, 129]
+excluding [122, 129]: n=28 adaptive 0.1084 fixed 0.1119 diff -0.0034 t=-1.64 p=0.113
+excluding [107, 122, 129]: n=27 adaptive 0.1017 fixed 0.1046 diff -0.0029 t=-1.37 p=0.183
+
+=== C. Noise-stress (battery-free): peak R, share of time in an alert state, seeds with false Emergency Stop ===
+fixed_0.50             peak R mean 0.461 max 0.496 | alert share 0.0507 | false E-stop seeds 0/30
+fixed_0.60             peak R mean 0.432 max 0.489 | alert share 0.0507 | false E-stop seeds 0/30
+fixed_0.70             peak R mean 0.393 max 0.473 | alert share 0.0507 | false E-stop seeds 0/30
+fixed_0.73             peak R mean 0.378 max 0.466 | alert share 0.0507 | false E-stop seeds 0/30
+fixed_0.75             peak R mean 0.368 max 0.460 | alert share 0.0507 | false E-stop seeds 0/30
+fixed_0.80             peak R mean 0.340 max 0.440 | alert share 0.0506 | false E-stop seeds 0/30
+fixed_0.85             peak R mean 0.308 max 0.409 | alert share 0.0024 | false E-stop seeds 0/30
+adapt_b0.85_l0.15      peak R mean 0.318 max 0.414 | alert share 0.0507 | false E-stop seeds 0/30
+adapt_b0.85_l0.5       peak R mean 0.338 max 0.425 | alert share 0.0507 | false E-stop seeds 0/30
+adapt_b0.85_l1         peak R mean 0.363 max 0.436 | alert share 0.0508 | false E-stop seeds 0/30
+adapt_b0.85_l2.5       peak R mean 0.416 max 0.458 | alert share 0.0508 | false E-stop seeds 0/30
+adapt_b0.85_l5         peak R mean 0.463 max 0.479 | alert share 0.0507 | false E-stop seeds 0/30
+adapt_b0.95_l0.15      peak R mean 0.244 max 0.303 | alert share 0.0003 | false E-stop seeds 0/30
+adapt_b0.95_l2.5       peak R mean 0.387 max 0.420 | alert share 0.0548 | false E-stop seeds 0/30
+adapt_b0.75_l0.15      peak R mean 0.375 max 0.461 | alert share 0.0507 | false E-stop seeds 0/30
+
+=== D. Fusion with realistic camera probability ===
+fusion_P0      FNR 0.1012 +/- 0.0583  mean P used 0.000  T_stop 230.9
+fusion_Pdraw   FNR 0.0707 +/- 0.0593  mean P used 0.133  T_stop 230.0
+fusion_P0.90   FNR 0.0000 +/- 0.0000  mean P used 0.900  T_stop 228.3
+
+=== E. Pre-warmed / faster batteries: time from arrival to first alert and to Emergency Stop (s) ===
+T0=25.0C rate x1.0 adaptive   T_warn  133.9 (n=13) | T_stop  161.2 (n=7) | B2 stop  168.0 | peak T 89
+T0=25.0C rate x1.0 fixed_0.85 T_warn  131.2 (n=12) | T_stop  161.3 (n=7) | B2 stop  168.0 | peak T 89
+T0=60.0C rate x3.0 adaptive   T_warn    9.3 (n=30) | T_stop   24.5 (n=30) | B2 stop   27.1 | peak T 856
+T0=60.0C rate x3.0 fixed_0.85 T_warn    0.0 (n=30) | T_stop   24.6 (n=30) | B2 stop   27.1 | peak T 856
+T0=80.0C rate x6.0 adaptive   T_warn    0.4 (n=30) | T_stop    7.8 (n=30) | B2 stop    8.5 | peak T 859
+T0=80.0C rate x6.0 fixed_0.85 T_warn    0.0 (n=30) | T_stop    7.9 (n=30) | B2 stop    8.5 | peak T 859
+T0=90.0C rate x10.0 adaptive   T_warn    0.4 (n=30) | T_stop    4.0 (n=30) | B2 stop    4.0 | peak T 877
+T0=90.0C rate x10.0 fixed_0.85 T_warn    0.0 (n=30) | T_stop    3.9 (n=30) | B2 stop    4.0 | peak T 877

@@ -1,0 +1,39 @@
+{
+ "n_test_frames": 136,
+ "test_videos": [
+  "after_08",
+  "before_03",
+  "before_05",
+  "before_06",
+  "before_07",
+  "before_09",
+  "before_11"
+ ],
+ "n_train_frames": 264,
+ "train_videos": [
+  "after_02",
+  "after_03",
+  "after_04",
+  "after_05",
+  "after_09",
+  "before_01",
+  "before_02",
+  "before_04",
+  "before_12"
+ ],
+ "v2": {
+  "false_alarm_frames": 0.17647058823529413,
+  "recall_occl_0.0": 0.9926470588235294,
+  "recall_occl_0.25": 0.9779411764705882,
+  "recall_occl_0.5": 0.9926470588235294,
+  "recall_occl_0.75": 0.9705882352941176
+ },
+ "v3_realbelt": {
+  "false_alarm_frames": 0.007352941176470588,
+  "recall_occl_0.0": 0.9926470588235294,
+  "recall_occl_0.25": 1.0,
+  "recall_occl_0.5": 1.0,
+  "recall_occl_0.75": 1.0,
+  "synthetic_val_mAP50": 0.9948802301507055
+ }
+}

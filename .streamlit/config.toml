@@ -1,0 +1,30 @@
+# Dark industrial theme with a safety-amber accent (adapted from the Streamlit skill's One Dark Pro config).
+[theme]
+base = "dark"
+primaryColor = "#f5a524"
+backgroundColor = "#11151c"
+secondaryBackgroundColor = "#1a212b"
+codeBackgroundColor = "#0d1117"
+textColor = "#d7dde5"
+linkColor = "#f5a524"
+borderColor = "#2c3542"
+showWidgetBorder = true
+showSidebarBorder = true
+baseRadius = "8px"
+buttonRadius = "8px"
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+baseFontSize = 14
+headingFontWeights = [700, 600, 600, 500, 500, 500]
+chartCategoricalColors = ["#f5a524", "#4fb3d9", "#7bd88f", "#e5636b", "#b48ead", "#56c2b6", "#d19a66"]
+greenColor = "#7bd88f"
+redColor = "#e5636b"
+orangeColor = "#f5a524"
+blueColor = "#4fb3d9"
+yellowColor = "#e8c547"
+violetColor = "#b48ead"
+
+[theme.sidebar]
+backgroundColor = "#0d1117"
+secondaryBackgroundColor = "#161c24"
+borderColor = "#2c3542"

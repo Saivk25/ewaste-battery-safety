@@ -1,0 +1,22 @@
+{
+ "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "torch": "2.13.0+cu132",
+ "EfficientNet-B0_gpu_ms": 14.350764999999228,
+ "EfficientNet-B0_cpu1_ms": 32.08531200001744,
+ "EfficientNet-B0_cpu4_ms": 28.421737999997276,
+ "MobileNetV2_gpu_ms": 7.373465000000579,
+ "MobileNetV2_cpu1_ms": 20.484767999987525,
+ "MobileNetV2_cpu4_ms": 18.27095600001485,
+ "YOLOv8n_gpu_ms": 13.313262000010582,
+ "YOLOv8n_cpu4_ms": 43.5825233333162,
+ "control_step_ms": 1.1604450000019522,
+ "control_budget_ms": 100.0,
+ "EfficientNet-B0_gpu_items_per_s": 69.68269635800279,
+ "EfficientNet-B0_cpu1_items_per_s": 31.16690902053427,
+ "EfficientNet-B0_cpu4_items_per_s": 35.18433672142414,
+ "MobileNetV2_gpu_items_per_s": 135.6214479895031,
+ "MobileNetV2_cpu1_items_per_s": 48.816759848127596,
+ "MobileNetV2_cpu4_items_per_s": 54.731673591638405,
+ "YOLOv8n_gpu_items_per_s": 75.1130714620658,
+ "YOLOv8n_cpu4_items_per_s": 22.944977103598784
+}

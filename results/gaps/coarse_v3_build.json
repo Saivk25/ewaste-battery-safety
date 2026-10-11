@@ -1,0 +1,88 @@
+{
+ "added_per_split": {
+  "train": 22,
+  "test": 7,
+  "val": 6
+ },
+ "train_repeats": 8,
+ "groups": 30,
+ "dropped_as_outside_test_clash": 0,
+ "cross_split_duplicates": 0,
+ "per_query": [
+  [
+   "test",
+   "bulging battery",
+   3
+  ],
+  [
+   "test",
+   "corroded battery",
+   1
+  ],
+  [
+   "test",
+   "inflated battery",
+   2
+  ],
+  [
+   "test",
+   "leaking battery",
+   1
+  ],
+  [
+   "train",
+   "battery swelling",
+   2
+  ],
+  [
+   "train",
+   "bulging battery",
+   1
+  ],
+  [
+   "train",
+   "corroded battery",
+   8
+  ],
+  [
+   "train",
+   "inflated battery",
+   1
+  ],
+  [
+   "train",
+   "leaking battery",
+   2
+  ],
+  [
+   "train",
+   "puffy battery",
+   1
+  ],
+  [
+   "train",
+   "swollen battery",
+   7
+  ],
+  [
+   "val",
+   "bulging battery",
+   1
+  ],
+  [
+   "val",
+   "corroded battery",
+   2
+  ],
+  [
+   "val",
+   "leaking battery",
+   1
+  ],
+  [
+   "val",
+   "swollen battery",
+   2
+  ]
+ ]
+}

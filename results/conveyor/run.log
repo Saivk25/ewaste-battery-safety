@@ -1,0 +1,136 @@
+Divert threshold P_battery >= 0.1411
+  validation: batteries diverted 0.9991 (n=2290; coarse-set photos 0.9787, RecyBat 1.0000) | non-battery diverted 0.0286 (n=420)
+  test:       batteries diverted 1.0000 (n=2303; coarse-set photos 1.0000, RecyBat 1.0000) | non-battery diverted 0.0423 (n=426)
+  battery hidden in a device (Electronics photos, test): diverted 0.0370
+
+Moving belt, held-out seeds 100-129 (30 items per scenario). Per item:
+  battery scenarios: shred = battery entered the shredder | haz = entered while self-heating (>= 45 C) | div = diverted | stop = belt E-stop
+                     bin = diverted failing cell caught by the bin sensors before runaway | unwatched = failing cell in an unmonitored bin
+  benign scenarios:  div = false divert | stop = false E-stop | loss = belt seconds lost per item
+-- benign
+   camera_only     div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   rule            div 0.000 (hood 0) | stop 0.000 | loss   0.0 s
+   ours            div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_no_divert  div 0.000 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_fixed_T    div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_raw_gas    div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+-- warm_burst
+   camera_only     div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   rule            div 0.000 (hood 0) | stop 1.000 | loss   0.1 s
+   ours            div 1.000 (hood 29) | stop 0.000 | loss   3.0 s
+   ours_no_divert  div 0.000 (hood 0) | stop 0.000 | loss   3.0 s
+   ours_fixed_T    div 1.000 (hood 29) | stop 0.000 | loss   3.0 s
+   ours_raw_gas    div 1.000 (hood 29) | stop 0.000 | loss   2.0 s
+-- hot45_burst
+   camera_only     div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   rule            div 0.000 (hood 0) | stop 1.000 | loss   0.1 s
+   ours            div 1.000 (hood 29) | stop 0.000 | loss   2.0 s
+   ours_no_divert  div 0.000 (hood 0) | stop 0.000 | loss   2.0 s
+   ours_fixed_T    div 1.000 (hood 29) | stop 0.000 | loss   4.1 s
+   ours_raw_gas    div 1.000 (hood 29) | stop 0.000 | loss   2.0 s
+-- intact
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 1.000 | haz 0.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   ours            shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   1.8 s 
+   ours_no_divert  shred 1.000 | haz 0.000 | div 0.000 | stop 0.000 | loss   1.8 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   1.8 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   1.8 s 
+-- fail60
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s  | unwatched 30
+   rule            shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   2.0 s 
+   ours            shred 0.000 | haz 0.000 | div 0.033 | stop 0.967 | loss   7.1 s bin 1/1 margin   7.5 s
+   ours_no_divert  shred 0.033 | haz 0.033 | div 0.000 | stop 0.967 | loss   7.1 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.033 | stop 0.967 | loss   7.1 s bin 1/1 margin   7.5 s
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.033 | stop 0.967 | loss   7.1 s bin 1/1 margin   7.5 s
+-- fail80
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s  | unwatched 30
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+-- fail90
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s  | unwatched 30
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.1 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+-- fail60_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   2.0 s 
+   ours            shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   2.0 s bin 30/30 margin   7.0 s
+   ours_no_divert  shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   2.0 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   2.0 s bin 30/30 margin   7.0 s
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   2.0 s bin 30/30 margin   7.0 s
+-- fail80_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.2 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.2 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.2 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.933 | stop 0.067 | loss  19.3 s bin 0/28 margin  -2.0 s
+-- fail90_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.1 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.9 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.9 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   2.9 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss  17.1 s bin 0/30 margin  -2.0 s
+-- hot45_benign
+   camera_only     div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   rule            div 0.000 (hood 0) | stop 0.000 | loss   2.0 s
+   ours            div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_no_divert  div 0.000 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_fixed_T    div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+   ours_raw_gas    div 0.033 (hood 0) | stop 0.000 | loss   0.0 s
+-- hot45_intact
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 1.000 | haz 0.000 | div 0.000 | stop 0.000 | loss   2.0 s 
+   ours            shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   1.8 s 
+   ours_no_divert  shred 1.000 | haz 0.000 | div 0.000 | stop 0.000 | loss   1.8 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   3.0 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   1.8 s 
+-- hot45_fail80_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.1 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   4.1 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   4.1 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   4.1 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.300 | stop 0.700 | loss   8.7 s bin 0/9 margin  -2.0 s
+-- open_fail80_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.767 | stop 0.233 | loss  16.1 s bin 0/23 margin  -2.0 s
+   ours_no_divert  shred 0.767 | haz 0.767 | div 0.000 | stop 0.233 | loss  16.1 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.767 | stop 0.233 | loss  16.1 s bin 0/23 margin  -2.0 s
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+-- slowgas_fail80_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   3.2 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   3.2 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   3.2 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+-- gasdead_fail80_hidden
+   camera_only     shred 1.000 | haz 1.000 | div 0.000 | stop 0.000 | loss   0.0 s 
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+-- gasdead_fail80
+   camera_only     shred 0.000 | haz 0.000 | div 1.000 | stop 0.000 | loss   0.0 s  | unwatched 30
+   rule            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   0.4 s 
+   ours            shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_no_divert  shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_fixed_T    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+   ours_raw_gas    shred 0.000 | haz 0.000 | div 0.000 | stop 1.000 | loss   1.9 s 
+
+Pooled over all failing-cell scenarios (per battery): hazardous batteries that entered the shredder
+   camera_only     210/330 = 0.636
+   rule            60/330 = 0.182
+   ours            0/330 = 0.000
+   ours_no_divert  54/330 = 0.164
+   ours_fixed_T    0/330 = 0.000
+   ours_raw_gas    0/330 = 0.000

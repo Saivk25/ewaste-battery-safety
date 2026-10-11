@@ -1,0 +1,16 @@
+data/
+outputs/
+__pycache__/
+eval_outputs/
+data_v2/
+data_det/
+runs_det/
+runs_cnn/
+yolov8n.pt
+runs/
+~$*
+weights/
+data_det_realbelt/
+results/rerun_logs/
+runs_cnn_legacy_v2/
+data_v3/

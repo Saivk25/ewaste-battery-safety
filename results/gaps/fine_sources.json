@@ -1,0 +1,16 @@
+{
+ "images": 2208,
+ "image_accuracy": 0.9963768115942029,
+ "sources": 164,
+ "source_accuracy_majority": 1.0,
+ "source_accuracy_majority_wilson95": [
+  0.9771117529861488,
+  1.0
+ ],
+ "sources_all_augmentations_correct": 161,
+ "sources_with_any_error": [
+  "rb24_val_42_1_R_1_po",
+  "rb24_val_20_5_R_3_pri_jpg",
+  "rb24_val_22_1_R_3_pri_jpg"
+ ]
+}

@@ -1,0 +1,42 @@
+TUNING seeds 200-229
+          kind                     params      fnr  crit_mild  crit_hard  estop_harder  admissible  m
+adaptive_paper               [0.85, 0.15] 0.102983          0         13            19       False  0
+  corroborated [0.0, 0.99, 0.5, 20, 40.0] 0.042770          0          0             0        True 20
+  corroborated [0.0, 0.99, 0.5, 20, 45.0] 0.042770          0          0             0        True 20
+  corroborated [0.0, 0.99, 0.5, 30, 40.0] 0.042770          0          0             0        True 30
+  corroborated [0.0, 0.99, 0.5, 30, 45.0] 0.042770          0          0             0        True 30
+  corroborated [0.0, 0.98, 0.5, 40, 40.0] 0.042770          0          0             0        True 40
+  corroborated [0.0, 0.98, 0.5, 40, 45.0] 0.042770          0          0             0        True 40
+  corroborated [0.0, 0.99, 0.5, 40, 40.0] 0.042770          0          0             0        True 40
+  corroborated [0.0, 0.99, 0.5, 40, 45.0] 0.042770          0          0             0        True 40
+  corroborated [0.0, 0.98, 0.5, 20, 40.0] 0.042770          0          0             5        True 20
+  corroborated [0.0, 0.98, 0.5, 20, 45.0] 0.042770          0          0             5        True 20
+  corroborated [0.0, 0.98, 0.5, 30, 40.0] 0.042770          0          0             5        True 30
+  corroborated [0.0, 0.98, 0.5, 30, 45.0] 0.042770          0          0             5        True 30
+  corroborated [0.0, 0.95, 0.5, 40, 40.0] 0.042770          0          0             8        True 40
+  corroborated [0.0, 0.95, 0.5, 40, 45.0] 0.042770          0          0             8        True 40
+  corroborated [0.0, 0.95, 0.5, 20, 40.0] 0.042770          0          2            10       False 20
+  corroborated [0.0, 0.95, 0.5, 20, 45.0] 0.042770          0          2            10       False 20
+  corroborated [0.0, 0.95, 0.5, 30, 40.0] 0.042770          0          1            10       False 30
+  corroborated [0.0, 0.95, 0.5, 30, 45.0] 0.042770          0          1            10       False 30
+         fixed                     [0.95] 0.120940          0          0             6        True  0
+         fixed                      [0.0] 0.042770          0          9            18       False  0
+
+chosen corroborated setting (tuning data only): [0.0, 0.99, 0.5, 20, 40.0]
+
+EVALUATION held-out seeds 100-129
+corroborated    [0.0, 0.99, 0.5, 20, 40.0]       Hazard FNR 0.0412 +/- 0.0264 | T_stop 229.1 | false Critical mild/hard/harder 0/0/14 | false E-stop hard/harder 0/1 (of 30)
+fixed_0         [0.0]                            Hazard FNR 0.0412 +/- 0.0264 | T_stop 229.1 | false Critical mild/hard/harder 0/15/30 | false E-stop hard/harder 0/25 (of 30)
+fixed_0.95      [0.95]                           Hazard FNR 0.1210 +/- 0.0824 | T_stop 240.3 | false Critical mild/hard/harder 0/0/30 | false E-stop hard/harder 0/4 (of 30)
+paper_adaptive  [0.85, 0.15]                     Hazard FNR 0.1012 +/- 0.0583 | T_stop 230.9 | false Critical mild/hard/harder 0/17/30 | false E-stop hard/harder 0/25 (of 30)
+corroborated minus fixed_0: +0.0000, paired t(29) = nan, p = nan; lower in 0, higher in 0
+corroborated minus fixed_0.95: -0.0798, paired t(29) = -5.72, p = 3.43e-06; lower in 28, higher in 0
+corroborated minus paper_adaptive: -0.0600, paired t(29) = -6.55, p = 3.6e-07; lower in 26, higher in 0
+
+Already-failing cells: seconds from arrival to Emergency Stop (mean / max over 30 seeds)
+                 mean                                            max                                  
+kind     corroborated fixed_0 fixed_0.95 paper_adaptive corroborated fixed_0 fixed_0.95 paper_adaptive
+T0 scale                                                                                              
+60 3             11.3    11.3       13.6           11.3         13.6    13.6       15.9           13.6
+80 6              3.7     3.7        8.4            3.9          3.9     3.9        8.6            7.6
+90 10             4.5     4.5        6.3            5.1          4.9     4.9        6.3            5.3

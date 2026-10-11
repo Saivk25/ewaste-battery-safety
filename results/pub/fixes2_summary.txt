@@ -1,0 +1,25 @@
+Tuning (seeds 200-229): system | single FNR | lag20 FNR | pre90 stop | false mild/hard/harder/warm_bursts
+  G_m20                  0.0100 0.0360   3.1  0/0/12/30  admissible
+  G_m20_W10_r0.2         0.0100 0.0360   4.2  0/0/12/5  
+  G_m20_W10_r0.3         0.0100 0.0360   4.2  0/0/12/5  
+  G_m20_W20_r0.2         0.0100 0.0360   4.2  0/0/12/5  
+  G_m40                  0.0100 0.0360   3.1  0/0/2/30  admissible
+  G_m40_W10_r0.2         0.0100 0.0360   4.2  0/0/2/0  
+  G_m40_W10_r0.3         0.0100 0.0360   4.2  0/0/2/0  
+  G_m40_W20_r0.2         0.0100 0.0360   4.2  0/0/2/0  
+  G_m80                  0.0100 0.0360   3.1  0/0/0/30  admissible
+  G_m80_W10_r0.2         0.0100 0.0360   4.2  0/0/0/0  
+  G_m80_W10_r0.3         0.0100 0.0360   4.2  0/0/0/0  
+  G_m80_W20_r0.2         0.0100 0.0360   4.2  0/0/0/0  
+-> chosen G_m80
+-> also evaluated G_m80_W10_r0.2 (pre90 stop 4.2 s vs 3.1 s for the current gate)
+
+HELD-OUT (seeds 100-129): FNR / mean stop (s) for hazard scenarios; false Critical / E-stop runs for battery-free
+  B2_Debounce_3s: single 0.0435/242.5 | multi 0.0302/242.5 | lag5 0.0561/247.5 | lag20 0.0897/248.6 | lag60 0.1963/248.6 | pre60 0.0300/16.9 | pre80 0.0300/4.8 | pre90 0.0300/3.0 | mild 0/0 | hard 2/2 | harder 16/16 | hot60 0/0 | hot90 0/0 | warm_bursts 2/2 | warm75_bursts 2/2 | cal_single 0.0000/301.8
+  B4_Logistic_g1: single 0.0000/168.7 | multi 0.0000/168.7 | lag5 0.0008/173.6 | lag20 0.0505/188.7 | lag60 0.2536/214.7 | pre60 0.0000/3.1 | pre80 0.0000/3.1 | pre90 0.0000/3.1 | mild 0/0 | hard 0/0 | harder 0/0 | hot60 30/30 | hot90 30/30 | warm_bursts 30/30 | warm75_bursts 30/30 | cal_single 0.0000/115.0
+  G_m20: single 0.0064/228.1 | multi 0.0000/227.8 | lag5 0.0108/232.0 | lag20 0.0285/232.7 | lag60 0.0557/242.1 | pre60 0.0000/10.2 | pre80 0.0000/3.1 | pre90 0.0000/3.1 | mild 0/0 | hard 0/0 | harder 14/1 | hot60 0/0 | hot90 30/30 | warm_bursts 30/0 | warm75_bursts 30/0 | cal_single 0.0000/261.9
+  G_m20_sensoronly: single 0.0441/229.1 | multi 0.0488/229.1 | lag5 0.0749/247.2 | lag20 0.1667/246.4 | lag60 0.3572/248.8 | pre60 0.0000/11.3 | pre80 0.0000/3.7 | pre90 0.0000/4.5 | mild 0/0 | hard 0/0 | harder 14/1 | hot60 0/0 | hot90 30/30 | warm_bursts 30/0 | warm75_bursts 30/0 | cal_single 0.0000/262.8
+  G_m80: single 0.0064/228.1 | multi 0.0000/227.8 | lag5 0.0108/232.0 | lag20 0.0285/232.7 | lag60 0.0557/242.1 | pre60 0.0000/10.2 | pre80 0.0000/3.1 | pre90 0.0000/3.1 | mild 0/0 | hard 0/0 | harder 0/0 | hot60 0/0 | hot90 30/30 | warm_bursts 30/0 | warm75_bursts 30/0 | cal_single 0.0000/261.9
+  G_m80_W10_r0.2: single 0.0064/228.1 | multi 0.0000/227.8 | lag5 0.0108/232.0 | lag20 0.0285/232.7 | lag60 0.0557/242.1 | pre60 0.0000/10.2 | pre80 0.0110/4.2 | pre90 0.0110/4.2 | mild 0/0 | hard 0/0 | harder 0/0 | hot60 0/0 | hot90 30/30 | warm_bursts 0/0 | warm75_bursts 0/0 | cal_single 0.0000/262.5
+  G_m80_W10_r0.2_sensoronly: single 0.0441/229.1 | multi 0.0488/229.1 | lag5 0.0749/247.2 | lag20 0.1667/246.4 | lag60 0.3572/248.8 | pre60 0.0000/11.3 | pre80 0.0190/6.8 | pre90 0.0190/5.0 | mild 0/0 | hard 0/0 | harder 0/0 | hot60 0/0 | hot90 30/30 | warm_bursts 0/0 | warm75_bursts 0/0 | cal_single 0.0000/263.5
+  G_m80_sensoronly: single 0.0441/229.1 | multi 0.0488/229.1 | lag5 0.0749/247.2 | lag20 0.1667/246.4 | lag60 0.3572/248.8 | pre60 0.0000/11.3 | pre80 0.0000/3.7 | pre90 0.0000/4.5 | mild 0/0 | hard 0/0 | harder 0/0 | hot60 0/0 | hot90 30/30 | warm_bursts 30/0 | warm75_bursts 30/0 | cal_single 0.0000/262.8

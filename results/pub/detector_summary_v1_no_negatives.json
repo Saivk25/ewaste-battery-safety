@@ -1,0 +1,33 @@
+{
+ "occlusion_0.0": {
+  "det_recall": 0.5666666666666667,
+  "cls_recall": 0.02,
+  "n": 300
+ },
+ "occlusion_0.25": {
+  "det_recall": 0.35333333333333333,
+  "cls_recall": 0.02,
+  "n": 300
+ },
+ "occlusion_0.5": {
+  "det_recall": 0.26,
+  "cls_recall": 0.016666666666666666,
+  "n": 300
+ },
+ "occlusion_0.75": {
+  "det_recall": 0.2,
+  "cls_recall": 0.02,
+  "n": 300
+ },
+ "battery_free": {
+  "det_false_alarm_frames": 0.9933333333333333,
+  "cls_false_alarm_frames": 0.02,
+  "n": 300
+ },
+ "val_clean": {
+  "mAP50": 0.9942514798220838,
+  "mAP50_95": 0.9069472152362206,
+  "precision": 0.990117174359835,
+  "recall": 0.9881944444444445
+ }
+}

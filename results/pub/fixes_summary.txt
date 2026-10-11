@@ -1,0 +1,99 @@
+Rate gate tuning (admissible: no false escalation in mild/hard/warm_bursts): FNR {'ProposedR_W10_r0.02': 0.01, 'ProposedR_W10_r0.05': 0.01, 'ProposedR_W10_r0.1': 0.01, 'ProposedR_W10_r0.2': 0.01, 'ProposedR_W3_r0.02': 0.01, 'ProposedR_W3_r0.05': 0.01, 'ProposedR_W3_r0.1': 0.01, 'ProposedR_W3_r0.2': 0.01, 'ProposedR_W5_r0.02': 0.01, 'ProposedR_W5_r0.05': 0.01, 'ProposedR_W5_r0.1': 0.01, 'ProposedR_W5_r0.2': 0.01} | false {'ProposedR_W10_r0.02': 30, 'ProposedR_W10_r0.05': 30, 'ProposedR_W10_r0.1': 10, 'ProposedR_W10_r0.2': 5, 'ProposedR_W3_r0.02': 30, 'ProposedR_W3_r0.05': 30, 'ProposedR_W3_r0.1': 30, 'ProposedR_W3_r0.2': 26, 'ProposedR_W5_r0.02': 30, 'ProposedR_W5_r0.05': 30, 'ProposedR_W5_r0.1': 27, 'ProposedR_W5_r0.2': 7} -> None
+Logistic tuning (admissible: mild/hard): FNR {'B4_Logistic_g0.6': 0.0, 'B4_Logistic_g0.8': 0.0, 'B4_Logistic_g1': 0.0} | false {'B4_Logistic_g0.6': 0, 'B4_Logistic_g0.8': 0, 'B4_Logistic_g1': 0} -> B4_Logistic_g0.6
+No admissible rate-gate setting; using the least-false setting for reporting only.
+
+HELD-OUT: Proposed (original gate) vs ProposedR (rate gate W=10s r=0.2C/s) vs logistic baseline
+  single         Proposed FNR 0.0064 stop  228.1     | ProposedR FNR 0.0064 stop  228.1     | Logistic FNR 0.0000 stop    nan
+  multi          Proposed FNR 0.0000 stop  227.8     | ProposedR FNR 0.0000 stop  227.8     | Logistic FNR 0.0000 stop    nan
+  lag5           Proposed FNR 0.0108 stop  232.0     | ProposedR FNR 0.0108 stop  232.0     | Logistic FNR 0.0104 stop    nan
+  lag20          Proposed FNR 0.0285 stop  232.7     | ProposedR FNR 0.0285 stop  232.7     | Logistic FNR 0.0825 stop    nan
+  lag60          Proposed FNR 0.0557 stop  242.1     | ProposedR FNR 0.0557 stop  242.1     | Logistic FNR 0.2764 stop    nan
+  pre60          Proposed FNR 0.0000 stop   10.2     | ProposedR FNR 0.0000 stop   10.2     | Logistic FNR 0.0000 stop    nan
+  pre80          Proposed FNR 0.0000 stop    3.1     | ProposedR FNR 0.0110 stop    4.2     | Logistic FNR 0.0000 stop    nan
+  pre90          Proposed FNR 0.0000 stop    3.1     | ProposedR FNR 0.0110 stop    4.2     | Logistic FNR 0.0000 stop    nan
+  mild           Proposed false  0/ 0                | ProposedR false  0/ 0                | Logistic false  0/ 0
+  hard           Proposed false  0/ 0                | ProposedR false  0/ 0                | Logistic false  0/ 0
+  harder         Proposed false 14/ 1                | ProposedR false 14/ 1                | Logistic false  0/ 0
+  hot60          Proposed false  0/ 0                | ProposedR false  0/ 0                | Logistic false 30/ 0
+  hot90          Proposed false 30/30                | ProposedR false 30/30                | Logistic false 30/ 0
+  warm_bursts    Proposed false 30/ 0                | ProposedR false 11/ 0                | Logistic false 30/ 0
+  warm75_bursts  Proposed false 30/ 0                | ProposedR false 12/ 0                | Logistic false 30/ 0
+
+Paired Hazard FNR differences (Holm):
+  single  Proposed - ProposedR_W10_r0.2            +0.0000 [+nan, +nan] p_holm=nan
+  single  Proposed - B4_Logistic_g0.6              +0.0064 [+0.0013, +0.0127] p_holm=0.0821
+  multi   Proposed - ProposedR_W10_r0.2            +0.0000 [+nan, +nan] p_holm=nan
+  multi   Proposed - B4_Logistic_g0.6              +0.0000 [+nan, +nan] p_holm=nan
+  lag5    Proposed - ProposedR_W10_r0.2            +0.0000 [+nan, +nan] p_holm=nan
+  lag5    Proposed - B4_Logistic_g0.6              +0.0004 [-0.0108, +0.0132] p_holm=0.948
+  lag20   Proposed - ProposedR_W10_r0.2            +0.0000 [+nan, +nan] p_holm=nan
+  lag20   Proposed - B4_Logistic_g0.6              -0.0539 [-0.0914, -0.0188] p_holm=0.0218
+  lag60   Proposed - ProposedR_W10_r0.2            +0.0000 [+nan, +nan] p_holm=nan
+  lag60   Proposed - B4_Logistic_g0.6              -0.2207 [-0.3055, -0.1476] p_holm=5.01e-05
+
+CALIBRATED THERMAL MODEL (frozen settings, held-out seeds): FNR | stop margin before runaway
+  cal_single  Proposed                   FNR 0.0000  margin  173.5  stopped 28/30
+  cal_single  ProposedR_W10_r0.2         FNR 0.0000  margin  173.0  stopped 28/30
+  cal_single  Proposed_sensoronly        FNR 0.0000  margin  172.6  stopped 28/30
+  cal_single  B2_Rule                    FNR 0.0000  margin  137.8  stopped 28/30
+  cal_single  B2_Debounce_3s             FNR 0.0000  margin  133.5  stopped 28/30
+  cal_single  B3_FixedFuzzy              FNR 0.0000  margin  171.9  stopped 28/30
+  cal_single  CUSUM_h16                  FNR 0.0000  margin  269.7  stopped 28/30
+  cal_lag20   Proposed                   FNR 0.0000  margin  153.5  stopped 28/30
+  cal_lag20   ProposedR_W10_r0.2         FNR 0.0000  margin  153.0  stopped 28/30
+  cal_lag20   Proposed_sensoronly        FNR 0.0000  margin  152.6  stopped 28/30
+  cal_lag20   B2_Rule                    FNR 0.0000  margin  117.8  stopped 28/30
+  cal_lag20   B2_Debounce_3s             FNR 0.0000  margin  113.5  stopped 28/30
+  cal_lag20   B3_FixedFuzzy              FNR 0.0000  margin  151.8  stopped 28/30
+  cal_lag20   CUSUM_h16                  FNR 0.0000  margin  249.7  stopped 28/30
+
+TRADE-OFF (sensor-only, held-out): single-battery FNR vs fraction of hard/harder/warm_bursts runs with a false escalation
+  sw_B2deb_5               FNR 0.0645  false 0.011
+  sw_B2deb_4               FNR 0.0544  false 0.100
+  sw_B2deb_3               FNR 0.0435  false 0.222
+  sw_B2deb_2               FNR 0.0308  false 0.578
+  sw_B2deb_0               FNR 0.0016  false 1.000
+  sw_B2deb_0.5             FNR 0.0091  false 1.000
+  sw_B2deb_1               FNR 0.0167  false 1.000
+  sw_CUSUM_32              FNR 0.1648  false 0.533
+  sw_CUSUM_16              FNR 0.1455  false 0.667
+  sw_CUSUM_8               FNR 0.1358  false 0.867
+  sw_CUSUM_1               FNR 0.0727  false 1.000
+  sw_CUSUM_2               FNR 0.1020  false 1.000
+  sw_CUSUM_4               FNR 0.1279  false 1.000
+  sw_Exp_5                 FNR 0.0717  false 0.833
+  sw_Exp_1.5               FNR 0.0922  false 0.844
+  sw_Exp_0.05              FNR 0.1084  false 0.856
+  sw_Exp_0.15              FNR 0.1084  false 0.856
+  sw_Exp_0.5               FNR 0.1022  false 0.867
+  sw_Fixed_0.99            FNR 0.1359  false 0.000
+  sw_Fixed_0.98            FNR 0.1324  false 0.133
+  sw_Fixed_0.95            FNR 0.1296  false 0.500
+  sw_Fixed_0.9             FNR 0.1189  false 0.822
+  sw_Fixed_0               FNR 0.0441  false 0.833
+  sw_Fixed_0.5             FNR 0.0580  false 0.833
+  sw_Fixed_0.8             FNR 0.1022  false 0.833
+  sw_Gated_80              FNR 0.0441  false 0.333
+  sw_Gated_40              FNR 0.0441  false 0.389
+  sw_Gated_20              FNR 0.0441  false 0.489
+  sw_Gated_10              FNR 0.0441  false 0.589
+  sw_Gated_5               FNR 0.0441  false 0.822
+  sw_GatedRate_10_0.2      FNR 0.0441  false 0.278
+  sw_GatedRate_5_0.2       FNR 0.0441  false 0.300
+  sw_GatedRate_10_0.1      FNR 0.0441  false 0.322
+  sw_GatedRate_5_0.1       FNR 0.0441  false 0.456
+  sw_GatedRate_3_0.2       FNR 0.0441  false 0.467
+  sw_GatedRate_10_0.05     FNR 0.0441  false 0.478
+  sw_GatedRate_10_0.02     FNR 0.0441  false 0.489
+  sw_GatedRate_3_0.02      FNR 0.0441  false 0.489
+  sw_GatedRate_3_0.05      FNR 0.0441  false 0.489
+  sw_GatedRate_3_0.1       FNR 0.0441  false 0.489
+  sw_GatedRate_5_0.02      FNR 0.0441  false 0.489
+  sw_GatedRate_5_0.05      FNR 0.0441  false 0.489
+
+CFNC weight sensitivity (single, held-out; CFNC = (w_run*N_run + w_early*N_early)/N_haz): mean per system
+  weights (10,2): B2_Debounce_3s 0.0870, B2_Rule 0.0031, B3_FixedFuzzy 0.2559, B4_Logistic_g0.6 0.0000, CUSUM_h16 0.2909, Proposed 0.0128, ProposedR_W10_r0.2 0.0128, ProposedR_sensoronly 0.0883, Proposed_sensoronly 0.0883
+  weights (5,1): B2_Debounce_3s 0.0435, B2_Rule 0.0016, B3_FixedFuzzy 0.1279, B4_Logistic_g0.6 0.0000, CUSUM_h16 0.1455, Proposed 0.0064, ProposedR_W10_r0.2 0.0064, ProposedR_sensoronly 0.0441, Proposed_sensoronly 0.0441
+  weights (20,1): B2_Debounce_3s 0.0435, B2_Rule 0.0016, B3_FixedFuzzy 0.1279, B4_Logistic_g0.6 0.0000, CUSUM_h16 0.1455, Proposed 0.0064, ProposedR_W10_r0.2 0.0064, ProposedR_sensoronly 0.0441, Proposed_sensoronly 0.0441
+  weights (2,1): B2_Debounce_3s 0.0435, B2_Rule 0.0016, B3_FixedFuzzy 0.1279, B4_Logistic_g0.6 0.0000, CUSUM_h16 0.1455, Proposed 0.0064, ProposedR_W10_r0.2 0.0064, ProposedR_sensoronly 0.0441, Proposed_sensoronly 0.0441
+  weights (1,1): B2_Debounce_3s 0.0435, B2_Rule 0.0016, B3_FixedFuzzy 0.1279, B4_Logistic_g0.6 0.0000, CUSUM_h16 0.1455, Proposed 0.0064, ProposedR_W10_r0.2 0.0064, ProposedR_sensoronly 0.0441, Proposed_sensoronly 0.0441

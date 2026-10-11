@@ -1,0 +1,28 @@
+{
+  "title": "E-Waste Safety: Hierarchical CNN with Adaptive Fuzzy Temporal Supervisory Risk Model (code and results)",
+  "upload_type": "software",
+  "description": "Code, trained checkpoints, experiment scripts and result tables for a simulation study of pre-shred lithium-ion battery fire prevention: two-stage EfficientNet-B0 battery detection, Mamdani fuzzy risk, corroboration-gated adaptive temporal memory, CNN-confidence fusion and a latching supervisory state machine. All sensor data are simulated; image datasets are public and must be downloaded separately (see docs/DATA.md).",
+  "creators": [
+    {
+      "name": "R, Sai Balaji",
+      "affiliation": "Vellore Institute of Technology, Chennai"
+    },
+    {
+      "name": "R, Niketha",
+      "affiliation": "Vellore Institute of Technology, Chennai"
+    },
+    {
+      "name": "B J, Balamurugan",
+      "affiliation": "Vellore Institute of Technology, Chennai"
+    }
+  ],
+  "keywords": [
+    "e-waste",
+    "lithium-ion battery",
+    "fuzzy logic",
+    "CNN",
+    "safety",
+    "simulation"
+  ],
+  "license": "MIT"
+}

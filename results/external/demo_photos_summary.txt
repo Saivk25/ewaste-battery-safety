@@ -1,0 +1,50 @@
+Coarse model on 44 Wikimedia Commons photos not in our data (Battery if P_battery >= 0.1113; BORDERLINE = detected with P below 0.5; 4 near-duplicates of our images).
+
+battery: PASS 13, BORDERLINE 9, FAIL 4
+not battery: FAIL 8, PASS 4
+hidden: SEEN 6
+
+  PASS           01_AA_alkaline_battery.jpg           AA alkaline battery                P_battery 0.653  top Battery 0.65  subtype LiIon_18650
+  PASS           02_AA_alkaline_battery.jpg           AA alkaline battery                P_battery 0.860  top Battery 0.86  subtype LiIon_18650
+  BORDERLINE     03_AA_alkaline_battery.jpg           AA alkaline battery                P_battery 0.317  top Metal 0.57  subtype LiIon_18650  [near-duplicate]
+  PASS           04_18650_Li-ion_cell.jpg             18650 Li-ion cell                  P_battery 0.718  top Battery 0.72  subtype LiIon_18650
+  PASS           05_18650_Li-ion_cell.jpg             18650 Li-ion cell                  P_battery 0.896  top Battery 0.90  subtype LiIon_Pouch
+  BORDERLINE     06_18650_Li-ion_cell.jpg             18650 Li-ion cell                  P_battery 0.393  top Battery 0.39  subtype LiIon_18650
+  PASS           07_LiPo_pouch_battery.jpg            LiPo pouch battery                 P_battery 0.742  top Battery 0.74  subtype LiIon_18650
+  BORDERLINE     08_LiPo_pouch_battery.jpg            LiPo pouch battery                 P_battery 0.370  top Paper 0.48  subtype LiIon_18650
+  FAIL           09_LiPo_pouch_battery.jpg            LiPo pouch battery                 P_battery 0.091  top Paper 0.81
+  PASS           10_Phone_battery.jpg                 Phone battery                      P_battery 0.743  top Battery 0.74  subtype LiIon_Pouch
+  PASS           11_Phone_battery.jpg                 Phone battery                      P_battery 0.614  top Battery 0.61  subtype LiPo
+  FAIL           12_Phone_battery.jpg                 Phone-charging kiosk               P_battery 0.651  top Battery 0.65  subtype LiIon_18650
+  BORDERLINE     13_Laptop_battery_pack.jpg           Coin cell                          P_battery 0.402  top Battery 0.40  subtype LiPo
+  PASS           14_Laptop_battery_pack.jpg           Laptop battery pack                P_battery 0.673  top Battery 0.67  subtype LiIon_Pouch
+  FAIL           15_9_V_battery.jpg                   9 V battery                        P_battery 0.081  top Plastic 0.34
+  PASS           16_9_V_battery.jpg                   9 V battery                        P_battery 0.713  top Battery 0.71  subtype LiIon_18650  [near-duplicate]
+  BORDERLINE     17_Coin_cell.jpg                     Coin cell                          P_battery 0.405  top Battery 0.41  subtype LiIon_Pouch
+  BORDERLINE     18_Coin_cell.jpg                     Coin cell                          P_battery 0.295  top Electronics 0.31  subtype LiIon_Pouch
+  BORDERLINE     19_Power_bank.jpg                    Tool battery pack                  P_battery 0.421  top Metal 0.43  subtype LiIon_18650
+  FAIL           20_Power_bank.jpg                    Metal mesh grille                  P_battery 0.161  top Paper 0.43  subtype LiIon_Pouch
+  BORDERLINE     21_Ni-MH_rechargeable.jpg            Ni-MH rechargeable                 P_battery 0.351  top Metal 0.41  subtype LiIon_18650  [near-duplicate]
+  PASS           22_Ni-MH_rechargeable.jpg            Ni-MH rechargeable                 P_battery 0.716  top Battery 0.72  subtype LiIon_Pouch
+  PASS           23_Lead-acid_battery.jpg             Lead-acid battery                  P_battery 0.754  top Battery 0.75  subtype LiIon_Pouch
+  SEEN           25_Smartphone.jpg                    Smartphone (battery inside)        P_battery 0.388  top Battery 0.39  subtype LiIon_18650
+  SEEN           26_Smartphone.jpg                    Smartphone (battery inside)        P_battery 0.411  top Battery 0.41  subtype LiIon_18650
+  SEEN           27_TV_remote.jpg                     TV remote (battery inside)         P_battery 0.589  top Battery 0.59  subtype LiIon_18650
+  SEEN           28_TV_remote.jpg                     TV remote (battery inside)         P_battery 0.772  top Battery 0.77  subtype LiIon_18650  [near-duplicate]
+  SEEN           29_E-cigarette_vape.jpg              E-cigarette / vape                 P_battery 0.847  top Battery 0.85  subtype LiIon_18650
+  SEEN           30_E-cigarette_vape.jpg              E-cigarette / vape                 P_battery 0.780  top Battery 0.78  subtype LiIon_18650
+  FAIL           31_Electrolytic_capacitor.jpg        Electrolytic capacitor (look-alike) P_battery 0.504  top Battery 0.50  subtype LiIon_18650
+  FAIL           32_Electrolytic_capacitor.jpg        Electrolytic capacitor (look-alike) P_battery 0.626  top Battery 0.63  subtype LiIon_Pouch
+  PASS           33_Lipstick.jpg                      Person (no battery)                P_battery 0.043  top Paper 0.73
+  PASS           34_Lipstick.jpg                      Person (no battery)                P_battery 0.032  top Electronics 0.54
+  FAIL           35_Glue_stick.jpg                    Glue stick (look-alike)            P_battery 0.189  top Metal 0.53  subtype LiIon_18650
+  FAIL           36_Aluminium_can.jpg                 Aluminium can                      P_battery 0.295  top Metal 0.55  subtype LiIon_Pouch
+  FAIL           38_Plastic_bottle.jpg                Plastic bottle                     P_battery 0.185  top Metal 0.63  subtype LiIon_Pouch
+  FAIL           39_Plastic_bottle.jpg                Plastic bottle                     P_battery 0.113  top Electronics 0.66  subtype LiIon_Pouch
+  PASS           40_Cardboard_paper.jpg               Cardboard / paper                  P_battery 0.033  top Electronics 0.66
+  PASS           41_Cardboard_paper.jpg               Cardboard / paper                  P_battery 0.044  top Metal 0.33
+  PASS           42_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.542  top Battery 0.54  subtype LiIon_Pouch
+  FAIL           43_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.106  top Metal 0.55
+  FAIL           44_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.083  top Electronics 0.60
+  BORDERLINE     45_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.178  top Electronics 0.56  subtype LiIon_18650
+  PASS           46_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.629  top Battery 0.63  subtype LiIon_18650

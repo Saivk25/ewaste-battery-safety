@@ -1,0 +1,172 @@
+B2-debounce tuning: FNR {'B2_Debounce_0.5s': 0.008804270155257409, 'B2_Debounce_1s': 0.01591873217870218, 'B2_Debounce_2s': 0.028919612750658484, 'B2_Debounce_3s': 0.04011289491152525, 'B2_Debounce_4s': 0.04997765986134477, 'B2_Debounce_5s': 0.05840768461749886} | false escalations {'B2_Debounce_0.5s': 30, 'B2_Debounce_1s': 30, 'B2_Debounce_2s': 4, 'B2_Debounce_3s': 0, 'B2_Debounce_4s': 0, 'B2_Debounce_5s': 0} -> chosen B2_Debounce_3s
+CUSUM tuning:      FNR {'CUSUM_h1': 0.07585053767934011, 'CUSUM_h16': 0.15592166264854038, 'CUSUM_h2': 0.10895242167091566, 'CUSUM_h32': 0.17525734531211257, 'CUSUM_h4': 0.13692208107003936, 'CUSUM_h8': 0.1457483714294304} | false escalations {'CUSUM_h1': 32, 'CUSUM_h16': 0, 'CUSUM_h2': 30, 'CUSUM_h32': 0, 'CUSUM_h4': 30, 'CUSUM_h8': 14} -> chosen CUSUM_h16
+
+HELD-OUT (seeds 100-129). Hazard scenarios: Hazard FNR mean | T_stop mean | stop margin before runaway mean (s)
+-- single
+   Proposed                 FNR 0.0064  T_stop  228.1 (n=27)  margin   21.7
+   B0_CameraOnly            FNR 0.1786  T_stop    0.0 (n=25)  margin  252.2
+   B1_VisionProxy           FNR 0.1077  T_stop  206.7 (n=28)  margin   48.3
+   B2_Rule                  FNR 0.0016  T_stop  239.5 (n=27)  margin   10.3
+   B2_Debounce_3s           FNR 0.0435  T_stop  242.5 (n=27)  margin    7.3
+   B3_FixedFuzzy            FNR 0.1279  T_stop  230.9 (n=27)  margin   19.0
+   CUSUM_h16                FNR 0.1455  T_stop  197.7 (n=28)  margin   58.2
+   Proposed_occluded        FNR 0.0441  T_stop  229.1 (n=27)  margin   20.7
+-- multi
+   Proposed                 FNR 0.0000  T_stop  227.8 (n=27)  margin   22.0
+   B0_CameraOnly            FNR 0.0000  T_stop    0.0 (n=30)  margin  249.9
+   B1_VisionProxy           FNR 0.0967  T_stop  212.0 (n=28)  margin   44.2
+   B2_Rule                  FNR 0.0011  T_stop  239.5 (n=27)  margin   10.3
+   B2_Debounce_3s           FNR 0.0302  T_stop  242.5 (n=27)  margin    7.3
+   B3_FixedFuzzy            FNR 0.1124  T_stop  231.3 (n=27)  margin   18.6
+   CUSUM_h16                FNR 0.1277  T_stop  197.7 (n=28)  margin   58.2
+   Proposed_occluded        FNR 0.0488  T_stop  229.1 (n=27)  margin   20.8
+-- lag5
+   Proposed                 FNR 0.0108  T_stop  232.0 (n=27)  margin   17.9
+   B0_CameraOnly            FNR 0.1786  T_stop    0.0 (n=25)  margin  252.2
+   B1_VisionProxy           FNR 0.1350  T_stop  209.5 (n=28)  margin   45.5
+   B2_Rule                  FNR 0.0021  T_stop  244.5 (n=27)  margin    5.3
+   B2_Debounce_3s           FNR 0.0561  T_stop  247.5 (n=27)  margin    2.3
+   B3_FixedFuzzy            FNR 0.1561  T_stop  248.5 (n=26)  margin   -3.6
+   CUSUM_h16                FNR 0.1733  T_stop  202.7 (n=28)  margin   53.2
+   Proposed_occluded        FNR 0.0749  T_stop  247.2 (n=27)  margin    2.7
+-- lag10
+   Proposed                 FNR 0.0175  T_stop  232.7 (n=27)  margin   17.2
+   B0_CameraOnly            FNR 0.1786  T_stop    0.0 (n=25)  margin  252.2
+   B1_VisionProxy           FNR 0.1624  T_stop  218.5 (n=28)  margin   36.7
+   B2_Rule                  FNR 0.0026  T_stop  245.6 (n=27)  margin    4.3
+   B2_Debounce_3s           FNR 0.0661  T_stop  248.6 (n=27)  margin    1.3
+   B3_FixedFuzzy            FNR 0.1836  T_stop  249.2 (n=26)  margin   -4.3
+   CUSUM_h16                FNR 0.2012  T_stop  207.7 (n=28)  margin   48.2
+   Proposed_occluded        FNR 0.1112  T_stop  245.4 (n=26)  margin   -0.4
+-- lag20
+   Proposed                 FNR 0.0285  T_stop  232.7 (n=27)  margin   17.2
+   B0_CameraOnly            FNR 0.1786  T_stop    0.0 (n=25)  margin  252.2
+   B1_VisionProxy           FNR 0.2172  T_stop  230.3 (n=28)  margin   24.5
+   B2_Rule                  FNR 0.0037  T_stop  245.6 (n=27)  margin    4.3
+   B2_Debounce_3s           FNR 0.0897  T_stop  248.6 (n=27)  margin    1.3
+   B3_FixedFuzzy            FNR 0.2391  T_stop  249.3 (n=26)  margin   -4.3
+   CUSUM_h16                FNR 0.2567  T_stop  211.7 (n=27)  margin   38.2
+   Proposed_occluded        FNR 0.1667  T_stop  246.4 (n=26)  margin   -1.5
+-- pre60
+   Proposed                 FNR 0.0000  T_stop   10.2 (n=30)  margin    7.1
+   B0_CameraOnly            FNR 0.0000  T_stop    0.0 (n=30)  margin   17.4
+   B1_VisionProxy           FNR 0.0154  T_stop   13.9 (n=30)  margin    3.5
+   B2_Rule                  FNR 0.0000  T_stop   13.9 (n=30)  margin    3.5
+   B2_Debounce_3s           FNR 0.0300  T_stop   16.9 (n=30)  margin    0.5
+   B3_FixedFuzzy            FNR 0.0030  T_stop   11.2 (n=30)  margin    6.1
+   CUSUM_h16                FNR 0.0340  T_stop    6.9 (n=30)  margin   10.5
+   Proposed_occluded        FNR 0.0000  T_stop   11.3 (n=30)  margin    6.0
+-- pre80
+   Proposed                 FNR 0.0000  T_stop    3.1 (n=30)  margin    0.5
+   B0_CameraOnly            FNR 0.0000  T_stop    0.0 (n=30)  margin    3.6
+   B1_VisionProxy           FNR 0.0010  T_stop    1.8 (n=30)  margin    1.8
+   B2_Rule                  FNR 0.0000  T_stop    1.8 (n=30)  margin    1.8
+   B2_Debounce_3s           FNR 0.0300  T_stop    4.8 (n=30)  margin   -1.2
+   B3_FixedFuzzy            FNR 0.0010  T_stop    1.5 (n=30)  margin    2.2
+   CUSUM_h16                FNR 0.0143  T_stop    2.9 (n=30)  margin    0.7
+   Proposed_occluded        FNR 0.0000  T_stop    3.7 (n=30)  margin   -0.1
+-- pre90
+   Proposed                 FNR 0.0000  T_stop    3.1 (n=30)  margin   -2.1
+   B0_CameraOnly            FNR 0.0000  T_stop    0.0 (n=30)  margin    1.0
+   B1_VisionProxy           FNR 0.0000  T_stop    0.0 (n=30)  margin    1.0
+   B2_Rule                  FNR 0.0000  T_stop    0.0 (n=30)  margin    1.0
+   B2_Debounce_3s           FNR 0.0300  T_stop    3.0 (n=30)  margin   -2.0
+   B3_FixedFuzzy            FNR 0.0010  T_stop    5.1 (n=30)  margin   -4.1
+   CUSUM_h16                FNR 0.0159  T_stop    3.4 (n=30)  margin   -2.4
+   Proposed_occluded        FNR 0.0000  T_stop    4.5 (n=30)  margin   -3.5
+
+Battery-free scenarios: runs with false Critical/E-stop (of 30) | false E-stop runs | escalation episodes per hour
+-- hard
+   Proposed                  0 |  0 |     0.0/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy            0 |  0 |     0.0/h
+   B2_Rule                  30 | 30 |   113.2/h
+   B2_Debounce_3s            2 |  2 |     0.8/h
+   B3_FixedFuzzy            30 |  0 |    97.6/h
+   CUSUM_h16                 0 |  0 |     0.0/h
+-- harder
+   Proposed                 14 |  1 |     6.8/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy            0 |  0 |     0.0/h
+   B2_Rule                  30 | 30 |   110.4/h
+   B2_Debounce_3s           16 | 16 |     6.4/h
+   B3_FixedFuzzy            30 | 30 |   109.2/h
+   CUSUM_h16                30 | 30 |    12.0/h
+-- hot120
+   Proposed                 30 | 30 |    30.0/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy           30 | 30 |    30.0/h
+   B2_Rule                  30 | 30 |    30.0/h
+   B2_Debounce_3s           30 | 30 |    30.0/h
+   B3_FixedFuzzy            30 | 30 |    30.0/h
+   CUSUM_h16                30 | 30 |    30.0/h
+-- hot60
+   Proposed                  0 |  0 |     0.0/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy           30 | 30 |    90.0/h
+   B2_Rule                   0 |  0 |     0.0/h
+   B2_Debounce_3s            0 |  0 |     0.0/h
+   B3_FixedFuzzy             0 |  0 |     0.0/h
+   CUSUM_h16                30 | 30 |    30.0/h
+-- hot90
+   Proposed                 30 | 30 |    30.0/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy           30 | 30 |  6035.0/h
+   B2_Rule                  30 | 30 |  6036.0/h
+   B2_Debounce_3s            0 |  0 |     0.0/h
+   B3_FixedFuzzy            30 | 30 |    30.0/h
+   CUSUM_h16                30 | 30 |    30.0/h
+-- mild
+   Proposed                  0 |  0 |     0.0/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy            0 |  0 |     0.0/h
+   B2_Rule                   0 |  0 |     0.0/h
+   B2_Debounce_3s            0 |  0 |     0.0/h
+   B3_FixedFuzzy             0 |  0 |     0.0/h
+   CUSUM_h16                 0 |  0 |     0.0/h
+-- warm_bursts
+   Proposed                 30 |  0 |   111.2/h
+   B0_CameraOnly             0 |  0 |     0.0/h
+   B1_VisionProxy           30 | 30 |    58.8/h
+   B2_Rule                  30 | 30 |   113.2/h
+   B2_Debounce_3s            2 |  2 |     0.8/h
+   B3_FixedFuzzy            30 |  0 |   112.4/h
+   CUSUM_h16                30 | 30 |    12.0/h
+
+Dwell-time sensitivity (Proposed): mean T_stop on failing cells | false-escalation runs in hard / harder / warm_bursts
+   Proposed_dwell_2_1       stop 10.2 / 3.1 / 3.1 s | false escalation 0 / 14 / 30
+   Proposed_dwell_1_0.5     stop 10.2 / 1.6 / 1.6 s | false escalation 2 / 16 / 30
+   Proposed_dwell_0.5_0.2   stop 10.2 / 0.7 / 0.7 s | false escalation 9 / 30 / 30
+   Proposed_dwell_0_0       stop 10.2 / 0.2 / 0.2 s | false escalation 11 / 30 / 30
+
+Paired comparisons of Hazard FNR (Proposed minus baseline): mean diff [95% bootstrap CI], Cohen dz, Holm p
+   single  Proposed - B0_CameraOnly           -0.1722 [-0.3113, -0.0353] dz=-0.46 p_holm=0.179
+   single  Proposed - B1_VisionProxy          -0.1013 [-0.1237, -0.0830] dz=-1.79 p_holm=1.13e-08
+   single  Proposed - B2_Rule                 +0.0048 [-0.0002, +0.0111] dz=0.31 p_holm=0.22
+   single  Proposed - B2_Debounce_3s          -0.0371 [-0.0548, -0.0240] dz=-0.86 p_holm=0.00125
+   single  Proposed - B3_FixedFuzzy           -0.1215 [-0.1531, -0.0975] dz=-1.57 p_holm=1.48e-07
+   single  Proposed - CUSUM_h16               -0.1391 [-0.1742, -0.1121] dz=-1.59 p_holm=1.28e-07
+   multi   Proposed - B0_CameraOnly           +0.0000 [+nan, +nan] dz=nan p_holm=nan
+   multi   Proposed - B1_VisionProxy          -0.0967 [-0.1131, -0.0827] dz=-2.28 p_holm=6.54e-11
+   multi   Proposed - B2_Rule                 -0.0011 [-0.0014, -0.0008] dz=-1.22 p_holm=8.66e-06
+   multi   Proposed - B2_Debounce_3s          -0.0302 [-0.0393, -0.0222] dz=-1.27 p_holm=4.27e-06
+   multi   Proposed - B3_FixedFuzzy           -0.1124 [-0.1341, -0.0949] dz=-2.07 p_holm=5.19e-10
+   multi   Proposed - CUSUM_h16               -0.1277 [-0.1523, -0.1083] dz=-2.12 p_holm=3.13e-10
+   lag5    Proposed - B0_CameraOnly           -0.1677 [-0.3044, -0.0344] dz=-0.46 p_holm=0.179
+   lag5    Proposed - B1_VisionProxy          -0.1242 [-0.1540, -0.1002] dz=-1.67 p_holm=4.75e-08
+   lag5    Proposed - B2_Rule                 +0.0087 [+0.0004, +0.0197] dz=0.33 p_holm=0.22
+   lag5    Proposed - B2_Debounce_3s          -0.0453 [-0.0709, -0.0262] dz=-0.73 p_holm=0.00658
+   lag5    Proposed - B3_FixedFuzzy           -0.1453 [-0.1846, -0.1154] dz=-1.49 p_holm=3.6e-07
+   lag5    Proposed - CUSUM_h16               -0.1625 [-0.2062, -0.1304] dz=-1.53 p_holm=2.38e-07
+   lag10   Proposed - B0_CameraOnly           -0.1611 [-0.2925, -0.0340] dz=-0.46 p_holm=0.179
+   lag10   Proposed - B1_VisionProxy          -0.1449 [-0.1833, -0.1132] dz=-1.52 p_holm=2.69e-07
+   lag10   Proposed - B2_Rule                 +0.0149 [+0.0017, +0.0315] dz=0.37 p_holm=0.22
+   lag10   Proposed - B2_Debounce_3s          -0.0485 [-0.0783, -0.0234] dz=-0.65 p_holm=0.019
+   lag10   Proposed - B3_FixedFuzzy           -0.1661 [-0.2146, -0.1283] dz=-1.39 p_holm=1.06e-06
+   lag10   Proposed - CUSUM_h16               -0.1837 [-0.2361, -0.1437] dz=-1.43 p_holm=7.7e-07
+   lag20   Proposed - B0_CameraOnly           -0.1500 [-0.2755, -0.0316] dz=-0.46 p_holm=0.179
+   lag20   Proposed - B1_VisionProxy          -0.1886 [-0.2422, -0.1455] dz=-1.41 p_holm=9.07e-07
+   lag20   Proposed - B2_Rule                 +0.0249 [+0.0045, +0.0507] dz=0.38 p_holm=0.22
+   lag20   Proposed - B2_Debounce_3s          -0.0612 [-0.0984, -0.0264] dz=-0.61 p_holm=0.0279
+   lag20   Proposed - B3_FixedFuzzy           -0.2105 [-0.2778, -0.1597] dz=-1.31 p_holm=2.8e-06
+   lag20   Proposed - CUSUM_h16               -0.2281 [-0.2962, -0.1750] dz=-1.34 p_holm=1.95e-06
