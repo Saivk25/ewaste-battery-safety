@@ -99,9 +99,9 @@ for split in ["train", "val", "test"]:
         print(f"  fine/{split}/NiCd: {n} images")
 
 # ── FIX 3: Fine Non_Battery ───────────────────────────────────────────────────
-print("\n[Fix 3] Creating Non_Battery from coarse Metal + Electronics images...")
+print("\n[Fix 3] Creating Non_Battery from coarse Metal + Cardboard_Trash images...")
 # Non_Battery = capacitors, fuses, motor windings, PCB components
-# Best proxy: Metal and Electronics from coarse dataset
+# Best proxy: Metal and Cardboard_Trash from coarse dataset
 
 for split in ["train", "val", "test"]:
     limits = {"train": 200, "val": 40, "test": 40}
@@ -110,7 +110,7 @@ for split in ["train", "val", "test"]:
     dst.mkdir(parents=True, exist_ok=True)
 
     collected = []
-    for coarse_cls in ["Metal", "Electronics"]:
+    for coarse_cls in ["Metal", "Cardboard_Trash"]:
         src = COARSE / split / coarse_cls
         if src.exists():
             collected.extend(get_images(src, limit=lim // 2))

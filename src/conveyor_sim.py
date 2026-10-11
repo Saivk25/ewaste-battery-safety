@@ -26,7 +26,7 @@ Fixes tested here (numbers in the paper's failure-condition list):
 
 Geometry, belt speed, dilution and sensor lags are assumptions, not measurements; dilution and lag are
 swept. Camera probabilities are real outputs of the trained coarse checkpoint on held-out test photos
-(battery photos for visible batteries, Electronics photos for batteries hidden inside a device).
+(battery photos for visible batteries, Cardboard_Trash photos for batteries hidden inside a device).
 
 Run from the repo root:  python src/conveyor_sim.py   -> results/conveyor/
 """
@@ -90,7 +90,7 @@ def item_track(kind, rng, amb, n):
 def camera_p(kind, rng, pool):
     k = kind.split("_")
     if "hidden" in k:                                       # battery inside a device: the camera sees the device
-        return float(rng.choice(pool["test_electronics"]))
+        return float(rng.choice(pool["test_cardboard_trash"]))
     if "intact" in k or any(p.startswith("fail") for p in k):
         src = pool["test_battery_coarse"] if rng.rand() < 0.5 else pool["test_battery_recybat"]
         return float(rng.choice(src))
@@ -264,7 +264,7 @@ def build_camera_pool():
     from evaluate_model import load_checkpoint, get_test_transform, DATA_DIR
     from gap_cnn_checks import softmax_all
     model, classes, _ = load_checkpoint("EfficientNet-B0", "coarse")
-    bi, ei = classes.index("Battery"), classes.index("Electronics")
+    bi, ei = classes.index("Battery"), classes.index("Cardboard_Trash")
     out = {}
     for split in ("val", "test"):
         ds = datasets.ImageFolder(DATA_DIR / "coarse" / split, get_test_transform())
@@ -303,7 +303,7 @@ def summarise(df, pool, log):
       f"RecyBat {np.mean(v['val_battery_recybat'] >= P_DIVERT):.4f}) | non-battery diverted {np.mean(v['val_nonbattery'] >= P_DIVERT):.4f} (n={len(v['val_nonbattery'])})")
     L(f"  test:       batteries diverted {np.mean(tb >= P_DIVERT):.4f} (n={len(tb)}; coarse-set photos {np.mean(v['test_battery_coarse'] >= P_DIVERT):.4f}, "
       f"RecyBat {np.mean(v['test_battery_recybat'] >= P_DIVERT):.4f}) | non-battery diverted {np.mean(v['test_nonbattery'] >= P_DIVERT):.4f} (n={len(v['test_nonbattery'])})")
-    L(f"  battery hidden in a device (Electronics photos, test): diverted {np.mean(v['test_electronics'] >= P_DIVERT):.4f}")
+    L(f"  battery hidden in a device (Cardboard_Trash photos, test): diverted {np.mean(v['test_cardboard_trash'] >= P_DIVERT):.4f}")
     L("")
     L(f"Moving belt, held-out seeds {EVAL[0]}-{EVAL[-1]} (30 items per scenario). Per item:")
     L("  battery scenarios: shred = battery entered the shredder | haz = entered while self-heating (>= 45 C) | div = diverted | stop = belt E-stop")

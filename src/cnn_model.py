@@ -42,7 +42,7 @@ BACKBONE_SPECS = {
     },
 }
 
-CLASSES_COARSE = ["Battery","Electronics","Glass","Metal","Paper","Plastic"]
+CLASSES_COARSE = ["Battery","Cardboard_Trash","Glass","Metal","Paper","Plastic"]
 CLASSES_FINE   = ["LiIon_18650","LiIon_Pouch","LiPo","NiMH","NiCd","Non_Battery"]
 N_EPOCHS = 25
 
@@ -90,9 +90,9 @@ def simulate_confusion_matrix(n_classes: int, base_acc: float,
         remaining = n_per_class - correct
         # Distribute errors: prefer adjacent classes (visually similar)
         error_weights = np.ones(n_classes); error_weights[i] = 0
-        # Battery often confused with Metal; Electronics confused with Battery
+        # Battery often confused with Metal; Cardboard_Trash confused with Battery
         if i == 0: error_weights[3] = 3   # Battery→Metal
-        if i == 1: error_weights[0] = 2   # Electronics→Battery
+        if i == 1: error_weights[0] = 2   # Cardboard_Trash→Battery
         error_weights /= error_weights.sum()
         errors = np.random.multinomial(remaining, error_weights)
         for j in range(n_classes):

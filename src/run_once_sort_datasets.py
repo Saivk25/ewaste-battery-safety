@@ -14,27 +14,27 @@ BASE = Path("data/raw")
 
 COARSE_MAP = {
     # TrashNet original classes
-    "cardboard":   "Electronics",
+    "cardboard":   "Cardboard_Trash",
     "glass":       "Glass",
     "metal":       "Metal",
     "paper":       "Paper",
     "plastic":     "Plastic",
-    "trash":       "Electronics",
+    "trash":       "Cardboard_Trash",
     # Garbage-12 classes
     "Battery":     "Battery",
-    "Cardboard":   "Electronics",
+    "Cardboard":   "Cardboard_Trash",
     "Glass":       "Glass",
     "Metal":       "Metal",
     "Paper":       "Paper",
     "Plastic":     "Plastic",
-    "Trash":       "Electronics",
-    "Biological":  "Electronics",
+    "Trash":       "Cardboard_Trash",
+    "Biological":  "Cardboard_Trash",
     "White-glass": "Glass",
-    "Clothes":     "Electronics",
-    "Shoes":       "Electronics",
+    "Clothes":     "Cardboard_Trash",
+    "Shoes":       "Cardboard_Trash",
     # Misc aliases
     "battery":     "Battery",
-    "electronics": "Electronics",
+    "electronics": "Cardboard_Trash",
 }
 
 FINE_MAP = {
@@ -146,7 +146,7 @@ def main():
         print(f"  TrashNet HF: {n} images sorted")
 
     print(f"\n  Coarse class summary:")
-    for cls in ["Battery","Electronics","Glass","Metal","Paper","Plastic"]:
+    for cls in ["Battery","Cardboard_Trash","Glass","Metal","Paper","Plastic"]:
         p = coarse_dst / cls
         if p.exists():
             n = len([f for f in p.iterdir() if f.suffix in IMG_EXTS])

@@ -333,7 +333,7 @@ def plot_confusion_matrices():
     cmap = plt.cm.Blues
     for ax, tag, labels, title, battery_idx in [
         (axes[0], "EfficientNetB0_coarse",
-         ["Battery","Electronics","Glass","Metal","Paper","Plastic"],
+         ["Battery","Cardboard_Trash","Glass","Metal","Paper","Plastic"],
          "Stage 1: Coarse Classifier (6-class)", 0),
         (axes[1], "EfficientNetB0_fine",
          ["LiIon\n18650","LiIon\nPouch","LiPo"],

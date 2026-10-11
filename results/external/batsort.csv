@@ -1,4 +1,4 @@
-path,P_battery,P_electronics,top,md5_dup,hamming,dup,folder,chemistry
+path,P_battery,P_cardboard_trash,top,md5_dup,hamming,dup,folder,chemistry
 C:\ewaste_ext\batsort\repo\Duracell_Alk\1200px-Duracell_battery.jpg,0.868765,0.033393484,Battery,False,9,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\1dac171d-c692-5a35-b69a-bbcbed048803.jpg,0.3455123,0.03990188,Metal,False,14,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\22434355_NjIwLTYyMC1iYjJkNzUzOTc3.jpg,0.92528254,0.012485443,Battery,False,11,False,Duracell_Alk,alkaline
@@ -10,7 +10,7 @@ C:\ewaste_ext\batsort\repo\Duracell_Alk\34.jpg,0.8770405,0.019266693,Battery,Fal
 C:\ewaste_ext\batsort\repo\Duracell_Alk\59-104_01.jpg,0.93545794,0.0077882265,Battery,False,6,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\59-107_01.jpg,0.89476144,0.013048334,Battery,False,5,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\63f79cf5bb21fc4891323c4d-4-pack-duracell-oem-alkaline-lr6-aa.jpg,0.88601255,0.0136808455,Battery,False,5,False,Duracell_Alk,alkaline
-C:\ewaste_ext\batsort\repo\Duracell_Alk\7b93dc7b-3475-5bab-b3e2-c33999b9b69f.jpg,0.15135531,0.58603996,Electronics,False,11,False,Duracell_Alk,alkaline
+C:\ewaste_ext\batsort\repo\Duracell_Alk\7b93dc7b-3475-5bab-b3e2-c33999b9b69f.jpg,0.15135531,0.58603996,Cardboard_Trash,False,11,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\85ad58e8-6c05-57f1-9fef-2846c4eff448.jpg,0.6952678,0.025908135,Battery,False,11,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\a592dc4c-819d-4e50-8a17-9945092c6822.2e7043c49756d37f9a4544a67b78ad15.jpg,0.8568116,0.01843394,Battery,False,8,False,Duracell_Alk,alkaline
 C:\ewaste_ext\batsort\repo\Duracell_Alk\AA-Battery.jpg,0.824177,0.019578146,Battery,False,0,True,Duracell_Alk,alkaline
@@ -198,7 +198,7 @@ C:\ewaste_ext\batsort\repo\GP_Alk\gp-batteries-super-alkaline-1.5v-aaa-micro-lr0
 C:\ewaste_ext\batsort\repo\GP_Alk\gp-batteries-super-alkaline-aa-batteries-shrink-of-2.jpg,0.6181103,0.091269985,Battery,False,2,True,GP_Alk,alkaline
 C:\ewaste_ext\batsort\repo\GP_Alk\gp-batteries-super-lady-lr-1-batteries.jpg,0.78661025,0.06742811,Battery,False,8,False,GP_Alk,alkaline
 C:\ewaste_ext\batsort\repo\GP_Alk\gp-super-lr3-aaa-alkaline-battery-15v-set-x4.jpg,0.78669477,0.024286907,Battery,False,10,False,GP_Alk,alkaline
-C:\ewaste_ext\batsort\repo\GP_Alk\gp-ultra-alkaline-aa-batteries-500x500.jpg,0.13781467,0.3370243,Electronics,False,16,False,GP_Alk,alkaline
+C:\ewaste_ext\batsort\repo\GP_Alk\gp-ultra-alkaline-aa-batteries-500x500.jpg,0.13781467,0.3370243,Cardboard_Trash,False,16,False,GP_Alk,alkaline
 C:\ewaste_ext\batsort\repo\GP_Alk\gp24as2_1.jpg,0.47432616,0.021040348,Battery,False,1,True,GP_Alk,alkaline
 C:\ewaste_ext\batsort\repo\GP_Alk\GP_Batteries-GP23A-image.jpg,0.73592955,0.021448677,Battery,False,10,False,GP_Alk,alkaline
 C:\ewaste_ext\batsort\repo\GP_Alk\gpimages.jpeg,0.7760715,0.022891173,Battery,False,4,True,GP_Alk,alkaline
@@ -212,7 +212,7 @@ C:\ewaste_ext\batsort\repo\GP_Alk\Ufcafa32f4ec54834bed3c782fd67a84ao.jpg,0.67510
 C:\ewaste_ext\batsort\repo\IKEA_Alk\07e43c6f210a34d17500b261fd3de861.jpg,0.854086,0.018284382,Battery,False,7,False,IKEA_Alk,alkaline
 C:\ewaste_ext\batsort\repo\IKEA_Alk\1 (2).jpeg,0.56071293,0.031824432,Battery,False,0,True,IKEA_Alk,alkaline
 C:\ewaste_ext\batsort\repo\IKEA_Alk\10 (2).jpeg,0.20521386,0.06411669,Metal,False,4,True,IKEA_Alk,alkaline
-C:\ewaste_ext\batsort\repo\IKEA_Alk\11 (2).jpeg,0.35133338,0.42531332,Electronics,False,11,False,IKEA_Alk,alkaline
+C:\ewaste_ext\batsort\repo\IKEA_Alk\11 (2).jpeg,0.35133338,0.42531332,Cardboard_Trash,False,11,False,IKEA_Alk,alkaline
 C:\ewaste_ext\batsort\repo\IKEA_Alk\12 (2).jpeg,0.16346906,0.0617544,Metal,False,12,False,IKEA_Alk,alkaline
 C:\ewaste_ext\batsort\repo\IKEA_Alk\120401-00010-1.jpg,0.6126136,0.039721612,Battery,False,4,True,IKEA_Alk,alkaline
 C:\ewaste_ext\batsort\repo\IKEA_Alk\120401-00020-2.jpg,0.7136968,0.041076716,Battery,False,4,True,IKEA_Alk,alkaline
@@ -340,7 +340,7 @@ C:\ewaste_ext\batsort\repo\Other\42.jpg,0.8145306,0.009129851,Battery,False,5,Fa
 C:\ewaste_ext\batsort\repo\Other\45.jpg,0.61322546,0.037024237,Battery,False,2,True,Other,other
 C:\ewaste_ext\batsort\repo\Other\5.jpg,0.6436449,0.018892292,Battery,False,0,True,Other,other
 C:\ewaste_ext\batsort\repo\Other\5090cff18e0d8a7b4e9f00d6a5a103b9.jpg,0.5551566,0.03863003,Battery,False,5,False,Other,other
-C:\ewaste_ext\batsort\repo\Other\51oawO146QL.jpg,0.2246839,0.49111375,Electronics,False,10,False,Other,other
+C:\ewaste_ext\batsort\repo\Other\51oawO146QL.jpg,0.2246839,0.49111375,Cardboard_Trash,False,10,False,Other,other
 C:\ewaste_ext\batsort\repo\Other\6.jpg,0.94504344,0.014061566,Battery,False,7,False,Other,other
 C:\ewaste_ext\batsort\repo\Other\71DMKjgMM1L.jpg,0.7575624,0.018050479,Battery,False,6,False,Other,other
 C:\ewaste_ext\batsort\repo\Other\8.png,0.93858874,0.022427145,Battery,False,3,True,Other,other

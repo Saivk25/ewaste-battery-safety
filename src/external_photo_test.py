@@ -74,7 +74,7 @@ def main():
     ap.add_argument("--batsort", required=True); ap.add_argument("--xbat", required=True)
     a = ap.parse_args()
     model, classes, _ = load_checkpoint("EfficientNet-B0", "coarse")
-    bi, ei = classes.index("Battery"), classes.index("Electronics")
+    bi, ei = classes.index("Battery"), classes.index("Cardboard_Trash")
     ours = images(DATA_DIR / "coarse")
     o_md5, o_dh = fingerprints(ours); o_md5 = set(o_md5)
 
@@ -82,7 +82,7 @@ def main():
         md5, dh = fingerprints(paths)
         ham = [nearest_hamming(h, o_dh) for h in dh]
         pb, pe, top = classify(model, paths, bi, ei)
-        return pd.DataFrame(dict(path=[str(p) for p in paths], P_battery=pb, P_electronics=pe,
+        return pd.DataFrame(dict(path=[str(p) for p in paths], P_battery=pb, P_cardboard_trash=pe,
                                  top=[classes[t] for t in top], md5_dup=[m in o_md5 for m in md5],
                                  hamming=ham, dup=[m in o_md5 or h <= DUP_HAMMING for m, h in zip(md5, ham)]))
 

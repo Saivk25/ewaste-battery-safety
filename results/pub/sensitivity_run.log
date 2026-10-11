@@ -1,0 +1,135 @@
+  ✓ Loaded: checkpoints\best_EfficientNetB0_coarse.pth  (best val_acc: 0.9380)
+  ✓ Loaded: checkpoints\best_EfficientNetB0_fine.pth  (best val_acc: 1.0000)
+One-at-a-time sensitivity, held-out seeds 100-129 (30 runs per scenario). Each hand-set constant x0.8 / 0.9 / 1.1 / 1.2.
+FNR = share of hazardous time with no alert (mean over runs). stop<runaway = runs that stopped before runaway
+(single, lag20, pre60, pre90 pooled, of 120). false Crit = benign runs with a false Critical or E-stop
+(hard, harder, hot60, warm_bursts pooled, of 120).
+
+== paper_gate   base: single FNR 0.0064 | lag20 FNR 0.0285 | stop<runaway 80/120 | false Crit 44/120 | pre90 stop 3.1 s
+   param                  factor  single FNR  lag20 FNR  stop<runaway  false Crit  pre90 stop
+   mf_temperature            0.8      0.0000     0.0000        83/120      44/120       3.1
+   mf_temperature            0.9      0.0000     0.0055        80/120      44/120       3.1
+   mf_temperature            1.1      0.0191     0.0388        80/120      44/120       3.1
+   mf_temperature            1.2      0.0290     0.0434        80/120      44/120       3.1
+   mf_h2                     0.8      0.0064     0.0285        84/120      44/120       3.1
+   mf_h2                     0.9      0.0064     0.0285        80/120      44/120       3.1
+   mf_h2                     1.1      0.0064     0.0285        79/120      44/120       3.1
+   mf_h2                     1.2      0.0064     0.0285        79/120      44/120       3.1
+   mf_co2                    0.8      0.0062     0.0254        80/120      74/120       3.1
+   mf_co2                    0.9      0.0064     0.0285        80/120      44/120       3.1
+   mf_co2                    1.1      0.0064     0.0285        84/120      44/120       3.1
+   mf_co2                    1.2      0.0064     0.0285        84/120      44/120       3.1
+   normal_to_warning         0.8      0.0000     0.0001        80/120      46/120       3.1
+   normal_to_warning         0.9      0.0000     0.0123        80/120      47/120       3.1
+   normal_to_warning         1.1      0.0102     0.0287        80/120      44/120       3.1
+   normal_to_warning         1.2      0.0348     0.1581        80/120      44/120       3.1
+   warning_to_critical       0.8      0.0064     0.0285        80/120      74/120       3.1
+   warning_to_critical       0.9      0.0064     0.0285        80/120      74/120       3.1
+   warning_to_critical       1.1      0.0064     0.0285        80/120      44/120       3.1
+   warning_to_critical       1.2      0.0064     0.0285        79/120      17/120       3.1
+   critical_to_emergency     0.8      0.0064     0.0285        84/120      44/120       3.1
+   critical_to_emergency     0.9      0.0064     0.0285        84/120      44/120       3.1
+   critical_to_emergency     1.1      0.0064     0.0285        75/120      44/120       3.1
+   critical_to_emergency     1.2      0.0064     0.0285        74/120      44/120       3.1
+   dwell_warning             0.8      0.0064     0.0285        80/120      49/120       2.7
+   dwell_warning             0.9      0.0064     0.0285        80/120      47/120       2.9
+   dwell_warning             1.1      0.0064     0.0285        80/120      41/120       3.3
+   dwell_warning             1.2      0.0064     0.0285        80/120      42/120       3.5
+   dwell_critical            0.8      0.0064     0.0285        80/120      44/120       2.9
+   dwell_critical            0.9      0.0064     0.0285        80/120      44/120       3.0
+   dwell_critical            1.1      0.0064     0.0285        80/120      44/120       3.2
+   dwell_critical            1.2      0.0064     0.0285        80/120      44/120       3.2
+   C_GATE                    0.8      0.0064     0.0285        80/120      44/120       3.1
+   C_GATE                    0.9      0.0064     0.0285        80/120      44/120       3.1
+   C_GATE                    1.1      0.0064     0.0285        80/120      47/120       3.1
+   C_GATE                    1.2      0.0064     0.0285        80/120      59/120       3.1
+   T_CORR                    0.8      0.0064     0.0285        80/120      44/120       3.1
+   T_CORR                    0.9      0.0064     0.0285        80/120      44/120       3.1
+   T_CORR                    1.1      0.0064     0.0285        80/120      44/120       3.1
+   T_CORR                    1.2      0.0064     0.0285        80/120      44/120       3.1
+   M_PERSIST                 0.8      0.0064     0.0285        80/120      49/120       3.1
+   M_PERSIST                 0.9      0.0064     0.0285        80/120      47/120       3.1
+   M_PERSIST                 1.1      0.0064     0.0285        80/120      41/120       3.1
+   M_PERSIST                 1.2      0.0064     0.0285        80/120      42/120       3.1
+   alpha                     0.8      0.0064     0.0285        80/120      44/120       3.1
+   alpha                     0.9      0.0064     0.0285        80/120      44/120       3.1
+   alpha                     1.1      0.0064     0.0285        80/120      44/120       3.1
+   alpha                     1.2      0.0064     0.0285        80/120      44/120       3.1
+   worst change over +/-20 % (FNR increase | stops lost | false Crit added):
+     mf_temperature         +0.0226 | +0 | +0
+     mf_h2                  +0.0000 | +1 | +0
+     mf_co2                 +0.0000 | +0 | +30
+     normal_to_warning      +0.1295 | +0 | +3
+     warning_to_critical    +0.0000 | +1 | +30
+     critical_to_emergency  +0.0000 | +6 | +0
+     dwell_warning          +0.0000 | +0 | +5
+     dwell_critical         +0.0000 | +0 | +0
+     C_GATE                 +0.0000 | +0 | +15
+     T_CORR                 +0.0000 | +0 | +0
+     M_PERSIST              +0.0000 | +0 | +5
+     alpha                  +0.0000 | +0 | +0
+
+== recommended_gate   base: single FNR 0.0064 | lag20 FNR 0.0285 | stop<runaway 80/120 | false Crit 0/120 | pre90 stop 4.2 s
+   param                  factor  single FNR  lag20 FNR  stop<runaway  false Crit  pre90 stop
+   mf_temperature            0.8      0.0000     0.0000        83/120       0/120       4.1
+   mf_temperature            0.9      0.0000     0.0055        80/120       0/120       4.1
+   mf_temperature            1.1      0.0191     0.0388        80/120       0/120       4.2
+   mf_temperature            1.2      0.0290     0.0434        80/120       0/120       4.2
+   mf_h2                     0.8      0.0064     0.0285        84/120       0/120       4.2
+   mf_h2                     0.9      0.0064     0.0285        80/120       0/120       4.2
+   mf_h2                     1.1      0.0064     0.0285        79/120       0/120       4.1
+   mf_h2                     1.2      0.0064     0.0285        79/120       0/120       4.1
+   mf_co2                    0.8      0.0062     0.0254        80/120      15/120       4.2
+   mf_co2                    0.9      0.0064     0.0285        80/120       0/120       4.2
+   mf_co2                    1.1      0.0064     0.0285        84/120       0/120       4.2
+   mf_co2                    1.2      0.0064     0.0285        84/120       0/120       4.2
+   normal_to_warning         0.8      0.0000     0.0001        80/120       0/120       3.3
+   normal_to_warning         0.9      0.0000     0.0123        80/120       0/120       3.7
+   normal_to_warning         1.1      0.0102     0.0287        80/120       0/120       4.6
+   normal_to_warning         1.2      0.0348     0.1581        80/120       0/120       5.0
+   warning_to_critical       0.8      0.0064     0.0285        80/120      61/120       4.2
+   warning_to_critical       0.9      0.0064     0.0285        80/120      30/120       4.2
+   warning_to_critical       1.1      0.0064     0.0285        80/120       0/120       4.2
+   warning_to_critical       1.2      0.0064     0.0285        79/120       0/120       4.2
+   critical_to_emergency     0.8      0.0064     0.0285        84/120       0/120       4.2
+   critical_to_emergency     0.9      0.0064     0.0285        84/120       0/120       4.2
+   critical_to_emergency     1.1      0.0064     0.0285        75/120       0/120       4.2
+   critical_to_emergency     1.2      0.0064     0.0285        74/120       0/120       4.2
+   dwell_warning             0.8      0.0064     0.0285        80/120       0/120       3.8
+   dwell_warning             0.9      0.0064     0.0285        80/120       0/120       4.0
+   dwell_warning             1.1      0.0064     0.0285        80/120       0/120       4.4
+   dwell_warning             1.2      0.0064     0.0285        80/120       0/120       4.6
+   dwell_critical            0.8      0.0064     0.0285        80/120       0/120       4.0
+   dwell_critical            0.9      0.0064     0.0285        80/120       0/120       4.1
+   dwell_critical            1.1      0.0064     0.0285        80/120       0/120       4.3
+   dwell_critical            1.2      0.0064     0.0285        80/120       0/120       4.3
+   C_GATE                    0.8      0.0064     0.0285        80/120       0/120       4.2
+   C_GATE                    0.9      0.0064     0.0285        80/120       0/120       4.2
+   C_GATE                    1.1      0.0064     0.0285        80/120       3/120       4.2
+   C_GATE                    1.2      0.0064     0.0285        80/120      37/120       4.2
+   T_CORR                    0.8      0.0064     0.0285        80/120       0/120       4.2
+   T_CORR                    0.9      0.0064     0.0285        80/120       0/120       4.2
+   T_CORR                    1.1      0.0064     0.0285        80/120       0/120       4.2
+   T_CORR                    1.2      0.0064     0.0285        80/120       0/120       4.2
+   M_PERSIST                 0.8      0.0064     0.0285        80/120       0/120       4.2
+   M_PERSIST                 0.9      0.0064     0.0285        80/120       0/120       4.2
+   M_PERSIST                 1.1      0.0064     0.0285        80/120       0/120       4.2
+   M_PERSIST                 1.2      0.0064     0.0285        80/120       0/120       4.2
+   alpha                     0.8      0.0064     0.0285        80/120       0/120       4.4
+   alpha                     0.9      0.0064     0.0285        80/120       0/120       4.3
+   alpha                     1.1      0.0064     0.0285        80/120       0/120       4.0
+   alpha                     1.2      0.0064     0.0285        80/120       0/120       3.9
+   worst change over +/-20 % (FNR increase | stops lost | false Crit added):
+     mf_temperature         +0.0226 | +0 | +0
+     mf_h2                  +0.0000 | +1 | +0
+     mf_co2                 +0.0000 | +0 | +15
+     normal_to_warning      +0.1295 | +0 | +0
+     warning_to_critical    +0.0000 | +1 | +61
+     critical_to_emergency  +0.0000 | +6 | +0
+     dwell_warning          +0.0000 | +0 | +0
+     dwell_critical         +0.0000 | +0 | +0
+     C_GATE                 +0.0000 | +0 | +37
+     T_CORR                 +0.0000 | +0 | +0
+     M_PERSIST              +0.0000 | +0 | +0
+     alpha                  +0.0000 | +0 | +0
+

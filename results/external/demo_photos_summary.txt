@@ -21,7 +21,7 @@ hidden: SEEN 6
   FAIL           15_9_V_battery.jpg                   9 V battery                        P_battery 0.081  top Plastic 0.34
   PASS           16_9_V_battery.jpg                   9 V battery                        P_battery 0.713  top Battery 0.71  subtype LiIon_18650  [near-duplicate]
   BORDERLINE     17_Coin_cell.jpg                     Coin cell                          P_battery 0.405  top Battery 0.41  subtype LiIon_Pouch
-  BORDERLINE     18_Coin_cell.jpg                     Coin cell                          P_battery 0.295  top Electronics 0.31  subtype LiIon_Pouch
+  BORDERLINE     18_Coin_cell.jpg                     Coin cell                          P_battery 0.295  top Cardboard_Trash 0.31  subtype LiIon_Pouch
   BORDERLINE     19_Power_bank.jpg                    Tool battery pack                  P_battery 0.421  top Metal 0.43  subtype LiIon_18650
   FAIL           20_Power_bank.jpg                    Metal mesh grille                  P_battery 0.161  top Paper 0.43  subtype LiIon_Pouch
   BORDERLINE     21_Ni-MH_rechargeable.jpg            Ni-MH rechargeable                 P_battery 0.351  top Metal 0.41  subtype LiIon_18650  [near-duplicate]
@@ -36,15 +36,15 @@ hidden: SEEN 6
   FAIL           31_Electrolytic_capacitor.jpg        Electrolytic capacitor (look-alike) P_battery 0.504  top Battery 0.50  subtype LiIon_18650
   FAIL           32_Electrolytic_capacitor.jpg        Electrolytic capacitor (look-alike) P_battery 0.626  top Battery 0.63  subtype LiIon_Pouch
   PASS           33_Lipstick.jpg                      Person (no battery)                P_battery 0.043  top Paper 0.73
-  PASS           34_Lipstick.jpg                      Person (no battery)                P_battery 0.032  top Electronics 0.54
+  PASS           34_Lipstick.jpg                      Person (no battery)                P_battery 0.032  top Cardboard_Trash 0.54
   FAIL           35_Glue_stick.jpg                    Glue stick (look-alike)            P_battery 0.189  top Metal 0.53  subtype LiIon_18650
   FAIL           36_Aluminium_can.jpg                 Aluminium can                      P_battery 0.295  top Metal 0.55  subtype LiIon_Pouch
   FAIL           38_Plastic_bottle.jpg                Plastic bottle                     P_battery 0.185  top Metal 0.63  subtype LiIon_Pouch
-  FAIL           39_Plastic_bottle.jpg                Plastic bottle                     P_battery 0.113  top Electronics 0.66  subtype LiIon_Pouch
-  PASS           40_Cardboard_paper.jpg               Cardboard / paper                  P_battery 0.033  top Electronics 0.66
+  FAIL           39_Plastic_bottle.jpg                Plastic bottle                     P_battery 0.113  top Cardboard_Trash 0.66  subtype LiIon_Pouch
+  PASS           40_Cardboard_paper.jpg               Cardboard / paper                  P_battery 0.033  top Cardboard_Trash 0.66
   PASS           41_Cardboard_paper.jpg               Cardboard / paper                  P_battery 0.044  top Metal 0.33
   PASS           42_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.542  top Battery 0.54  subtype LiIon_Pouch
   FAIL           43_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.106  top Metal 0.55
-  FAIL           44_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.083  top Electronics 0.60
-  BORDERLINE     45_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.178  top Electronics 0.56  subtype LiIon_18650
+  FAIL           44_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.083  top Cardboard_Trash 0.60
+  BORDERLINE     45_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.178  top Cardboard_Trash 0.56  subtype LiIon_18650
   PASS           46_Swollen_damaged_battery.jpg       Swollen / damaged battery          P_battery 0.629  top Battery 0.63  subtype LiIon_18650

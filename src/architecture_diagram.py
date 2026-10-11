@@ -72,7 +72,7 @@ draw_box(ax, 0.68, 0.445, 0.20, 0.055, "S(t) Fuzzy Risk", "[0, 1]", color="#d4ac
 ax.text(0.5, 0.39, "③ FUSION & TEMPORAL LAYER", ha='center', fontsize=9, color='#7f8c8d',
         fontweight='bold', style='italic')
 draw_box(ax, 0.50, 0.325, 0.44, 0.07, "Adaptive Temporal Risk Update",
-         "R(t) = β(t)·R(t−1) + (1−β(t))·S(t)   |   β(t) = β_max·exp(−λ·|ΔS(t)|)",
+         "R(t) = β(t)·R(t−1) + (1−β(t))·S(t)   |   β = 0 if corroborated (S ≤ 0.5, T ≥ 40 °C or > 2 s), else 0.99",
          color="#c0392b", fontsize=10)
 draw_box(ax, 0.50, 0.235, 0.36, 0.06, "CNN-Confidence Fusion",
          "R_fused(t) = R(t) · (1 + α · P_battery)   [clipped to 1]",

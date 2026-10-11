@@ -30,7 +30,7 @@ IMG_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 DATASETS = {
     "fine":   (Path("data/fine"),   ["LiIon_18650", "LiIon_Pouch", "LiPo"]),
-    "coarse": (Path("data/coarse"), ["Battery", "Electronics", "Glass", "Metal", "Paper", "Plastic"]),
+    "coarse": (Path("data/coarse"), ["Battery", "Cardboard_Trash", "Glass", "Metal", "Paper", "Plastic"]),
 }
 
 

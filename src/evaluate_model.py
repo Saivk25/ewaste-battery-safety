@@ -47,7 +47,7 @@ CFNC_WEIGHTS = {
     "LiIon_18650": 10.0,
     "LiIon_Pouch": 10.0,
     "LiPo":         9.0,
-    "Electronics":  3.0,   # Missing e-waste = bad but less dangerous
+    "Cardboard_Trash":  3.0,   # Missing e-waste = bad but less dangerous
     "Metal":        2.0,
     "NiMH":         4.0,
     "NiCd":         4.0,

@@ -235,7 +235,7 @@ def _spans(t, mask):
 
 if __name__ == "__main__":          # self-check: every scenario builds and the outcomes are the simulation's
     pool = {"test_battery_coarse": np.array([0.9]), "test_battery_recybat": np.array([0.9]),
-            "test_nonbattery": np.array([0.05]), "test_electronics": np.array([0.02])}
+            "test_nonbattery": np.array([0.05]), "test_cardboard_trash": np.array([0.02])}
     for label, kind in SCENARIOS.items():
         fig, lanes, item = figure(kind, 100, pool)
         assert len(fig.frames) > 10

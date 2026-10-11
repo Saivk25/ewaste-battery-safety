@@ -3,7 +3,7 @@ import conveyor_sim as c
 
 # fixed camera pool so the test needs no checkpoint
 POOL = {"test_battery_coarse": np.array([0.9]), "test_battery_recybat": np.array([0.9]),
-        "test_nonbattery": np.array([0.05]), "test_electronics": np.array([0.02])}
+        "test_nonbattery": np.array([0.05]), "test_cardboard_trash": np.array([0.02])}
 
 
 def test_camera_only_shreds_hidden_failing_cell():

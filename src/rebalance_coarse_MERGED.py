@@ -48,7 +48,7 @@ np.random.seed(SEED)
 # which are confirmed derived copies of garbage12 content (see docstring).
 SOURCES = {
     "Battery":     [(RAW_DIR / "garbage12" / "Battery", "g12")],
-    "Electronics": [(RAW_DIR / "trashnet" / "cardboard", "tn"),
+    "Cardboard_Trash": [(RAW_DIR / "trashnet" / "cardboard", "tn"),
                      (RAW_DIR / "trashnet" / "trash", "tn")],
     "Glass":       [(RAW_DIR / "trashnet" / "glass", "tn"),
                      (RAW_DIR / "garbage12" / "White-glass", "g12")],
@@ -61,7 +61,7 @@ SOURCES = {
 }
 
 AUG_TARGETS = {
-    "Battery": 600, "Electronics": 400, "Glass": 300,
+    "Battery": 600, "Cardboard_Trash": 400, "Glass": 300,
     "Metal": 350, "Paper": 300, "Plastic": 350,
 }
 

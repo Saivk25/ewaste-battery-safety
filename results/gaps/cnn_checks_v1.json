@@ -102,7 +102,7 @@
     "mean_P_battery": 0.11167564243078232,
     "predicted_as": {
      "Battery": 31,
-     "Electronics": 327,
+     "Cardboard_Trash": 327,
      "Paper": 71,
      "Plastic": 99
     }
@@ -113,7 +113,7 @@
     "mean_P_battery": 0.09625677764415741,
     "predicted_as": {
      "Battery": 24,
-     "Electronics": 380,
+     "Cardboard_Trash": 380,
      "Glass": 111,
      "Metal": 23,
      "Paper": 142,
@@ -126,7 +126,7 @@
     "mean_P_battery": 0.11371299624443054,
     "predicted_as": {
      "Battery": 43,
-     "Electronics": 702,
+     "Cardboard_Trash": 702,
      "Glass": 37,
      "Paper": 144,
      "Plastic": 34

@@ -1,7 +1,7 @@
 Divert threshold P_battery >= 0.5
   validation: batteries diverted 0.9965 (n=2290; coarse-set photos 0.9149, RecyBat 1.0000) | non-battery diverted 0.0024 (n=420)
   test:       batteries diverted 0.9978 (n=2303; coarse-set photos 0.9474, RecyBat 1.0000) | non-battery diverted 0.0023 (n=426)
-  battery hidden in a device (Electronics photos, test): diverted 0.0000
+  battery hidden in a device (Cardboard_Trash photos, test): diverted 0.0000
 
 Moving belt, held-out seeds 100-129 (30 items per scenario). Per item:
   battery scenarios: shred = battery entered the shredder | haz = entered while self-heating (>= 45 C) | div = diverted | stop = belt E-stop

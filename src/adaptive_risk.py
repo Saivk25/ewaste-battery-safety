@@ -178,11 +178,11 @@ class RealCNN:
     Which real image gets sampled is driven by the simulation's own ground-
     truth `battery_present` flag: a battery scenario draws a random real
     image from data/fine/test/{LiIon_18650,LiIon_Pouch,LiPo}, a non-battery
-    scenario draws from data/coarse/test/{Electronics,Glass,Metal,Paper,
+    scenario draws from data/coarse/test/{Cardboard_Trash,Glass,Metal,Paper,
     Plastic}. Both checkpoints then run for real; battery_prob is the coarse
     model's actual softmax probability for the "Battery" class.
     """
-    COARSE_NONBATTERY = ["Electronics", "Glass", "Metal", "Paper", "Plastic"]
+    COARSE_NONBATTERY = ["Cardboard_Trash", "Glass", "Metal", "Paper", "Plastic"]
     FINE_CLASSES      = ["LiIon_18650", "LiIon_Pouch", "LiPo"]
 
     def __init__(self, seed=77, data_dir="data", checkpoint_dir="checkpoints"):

@@ -12,7 +12,7 @@ Output structure:
   data/
     coarse/
       train/ val/ test/
-        Battery/ Electronics/ Glass/ Metal/ Paper/ Plastic/
+        Battery/ Cardboard_Trash/ Glass/ Metal/ Paper/ Plastic/
     fine/
       train/ val/ test/
         LiIon_18650/ LiIon_Pouch/ LiPo/ NiMH/ NiCd/ Non_Battery/
@@ -36,14 +36,14 @@ RAW_DIR      = BASE_DIR / "raw"
 SEED         = 42
 SPLIT        = (0.80, 0.10, 0.10)   # train / val / test
 
-COARSE_CLASSES = ["Battery", "Electronics", "Glass", "Metal", "Paper", "Plastic"]
+COARSE_CLASSES = ["Battery", "Cardboard_Trash", "Glass", "Metal", "Paper", "Plastic"]
 FINE_CLASSES   = ["LiIon_18650", "LiIon_Pouch", "LiPo", "NiMH", "NiCd", "Non_Battery"]
 
 # Augmentation target counts per class (training set)
 # Battery gets 3x augmentation to fix class imbalance
 AUG_TARGETS = {
     "Battery":     600,   # augment heavily
-    "Electronics": 400,
+    "Cardboard_Trash": 400,
     "Glass":       300,
     "Metal":       350,
     "Paper":       300,
@@ -121,12 +121,12 @@ def process_trashnet():
     
     # TrashNet class → our class name mapping
     class_map = {
-        "cardboard": "Electronics",  # cardboard packaging of electronics
+        "cardboard": "Cardboard_Trash",  # TrashNet cardboard
         "glass":     "Glass",
         "metal":     "Metal",
         "paper":     "Paper",
         "plastic":   "Plastic",
-        "trash":     "Electronics",  # mixed e-waste proxy
+        "trash":     "Cardboard_Trash",  # TrashNet general trash
     }
     
     # Check for dataset-resized subfolder

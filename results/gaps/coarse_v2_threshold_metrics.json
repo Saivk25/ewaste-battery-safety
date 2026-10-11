@@ -10,7 +10,7 @@
  "battery_recall": 1.0,
  "per_class_recall": {
   "Battery": 1.0,
-  "Electronics": 0.8703703703703703,
+  "Cardboard_Trash": 0.8703703703703703,
   "Glass": 0.900990099009901,
   "Metal": 0.8717948717948718,
   "Paper": 0.8857142857142857,

@@ -15,18 +15,18 @@ BatSort (web photos, 360 images, 181 near-duplicates of ours, 0 exact)
 
 XBAT+ RGB (real WEEE devices that hold a battery, 421 images, 1 near-duplicates)
   camera alone diverts (P_battery >= 0.1113): 0.829 (348/420)
-  top class: Battery 210, Electronics 116, Glass 45, Paper 26, Plastic 12, Metal 11
+  top class: Battery 210, Cardboard_Trash 116, Glass 45, Paper 26, Plastic 12, Metal 11
   AlarmClock      n=  7  diverted by camera 0.571  top=Battery
   ComputerMouse   n= 12  diverted by camera 0.667  top=Glass
-  E-Razor         n= 14  diverted by camera 0.857  top=Electronics
+  E-Razor         n= 14  diverted by camera 0.857  top=Cardboard_Trash
   E-Toothbrush    n= 14  diverted by camera 0.929  top=Battery
-  FireAlarm       n= 17  diverted by camera 0.647  top=Electronics
-  FlashLight      n=  6  diverted by camera 0.833  top=Electronics
-  GameController  n= 11  diverted by camera 0.727  top=Electronics
-  KidToy          n= 19  diverted by camera 0.421  top=Electronics
+  FireAlarm       n= 17  diverted by camera 0.647  top=Cardboard_Trash
+  FlashLight      n=  6  diverted by camera 0.833  top=Cardboard_Trash
+  GameController  n= 11  diverted by camera 0.727  top=Cardboard_Trash
+  KidToy          n= 19  diverted by camera 0.421  top=Cardboard_Trash
   MobilePhone     n=102  diverted by camera 0.882  top=Battery
   NewsRadio       n=  8  diverted by camera 1.000  top=Battery
-  NightTorch      n= 18  diverted by camera 0.833  top=Electronics
+  NightTorch      n= 18  diverted by camera 0.833  top=Cardboard_Trash
   PhotoCamera     n= 13  diverted by camera 0.923  top=Battery
   RemoteControl   n=144  diverted by camera 0.882  top=Battery
   Thermometer     n=  8  diverted by camera 0.500  top=Battery
