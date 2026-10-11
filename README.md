@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23291424.svg)](https://doi.org/10.5281/zenodo.23291424)
 
-Code, trained models and results are archived on Zenodo: doi:10.5281/zenodo.23291424 (all versions; v1.0.0: doi:10.5281/zenodo.23291425). Public repository: https://github.com/Saivk25/ewaste-battery-safety
+Code, trained models and results are archived on Zenodo: doi:10.5281/zenodo.23291424 (all versions; v1.1.0: doi:10.5281/zenodo.23305358). Public repository: https://github.com/Saivk25/ewaste-battery-safety
 
 Early-warning and emergency-stop logic for **pre-shred lithium-ion battery fires** in e-waste recycling.
 A two-stage CNN spots batteries on a conveyor, a fuzzy rule base reads temperature / gas / metal sensors,
