@@ -3,7 +3,7 @@ message: "If you use this code or its results, please cite it as below."
 title: "E-Waste Safety: Hierarchical CNN with Adaptive Fuzzy Temporal Supervisory Risk Model for Pre-Shred Ignition Control"
 type: software
 doi: 10.5281/zenodo.23291424
-version: 1.1.0
+version: 1.2.0
 authors:
   - family-names: "R"
     given-names: "Sai Balaji"

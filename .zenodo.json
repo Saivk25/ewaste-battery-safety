@@ -1,7 +1,7 @@
 {
   "title": "E-waste battery safety: hierarchical CNN with adaptive fuzzy temporal supervisory risk model (code, trained models and results)",
   "upload_type": "software",
-  "description": "Code, trained checkpoints, experiment scripts and result tables for a simulation study of pre-shred lithium-ion battery fire prevention: two-stage EfficientNet-B0 battery detection, Mamdani fuzzy risk, corroboration-gated adaptive temporal memory, CNN-confidence fusion and a latching supervisory state machine. All sensor data are simulated; image datasets are public and must be downloaded separately (see docs/DATA.md). Includes a moving-belt line simulation with a tiered diverter, robustness checks of every hand-set setting and of the gas and thermal models, and tests on outside images (Wikimedia Commons, BatSort, XBAT+, ZeroWaste).",
+  "description": "Code, trained checkpoints, experiment scripts and result tables for a simulation study of pre-shred lithium-ion battery fire prevention: two-stage EfficientNet-B0 battery detection, Mamdani fuzzy risk, corroboration-gated adaptive temporal memory, CNN-confidence fusion and a latching supervisory state machine. All sensor data are simulated; image datasets are public and must be downloaded separately (see docs/DATA.md). Includes a moving-belt line simulation with a tiered diverter, robustness checks of every hand-set setting and of the gas and thermal models, and tests on outside images (Wikimedia Commons, BatSort, XBAT+, ZeroWaste). Version 1.2.0 adds the paper's supplementary material (docs/ncset_supplement.pdf: Sections S1–S11, Tables S1–S13, Fig. S1); code, checkpoints and results are unchanged from 1.1.0.",
   "creators": [
     {
       "name": "R, Sai Balaji",
@@ -25,6 +25,6 @@
     "simulation"
   ],
   "license": "mit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "access_right": "open"
 }
